@@ -1,8 +1,5 @@
+const Footer = () => {
+  return <div>Footer</div>;
+};
 
-const footer = () => {
-  return (
-    <div>footer</div>
-  )
-}
-
-export default footer
+export default Footer;
