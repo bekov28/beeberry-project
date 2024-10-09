@@ -43,6 +43,8 @@ const AppModal = () => {
                     height: "308px",
                     borderRadius: "308px",
                     border: "5px solid #FFF",
+                    marginRight: "40px",
+                    marginTop: "70px",
                   }}
                 />
                 <div
@@ -63,7 +65,8 @@ const AppModal = () => {
                       display: "flex",
                       height: "50px",
                       width: "50px",
-                      marginLeft: "-315px",
+                      marginLeft: "-380px",
+                      marginTop: "50px",
                     }}
                   />
                 </div>

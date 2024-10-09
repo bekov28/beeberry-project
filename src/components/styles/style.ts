@@ -4,7 +4,7 @@ export const MainCon = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
+  align-items: center;
 `;
 
 export const NavbarCon = styled.div`
@@ -25,6 +25,9 @@ export const NavFirstCon = styled.div`
   display: flex;
   gap: 10px;
   cursor: pointer;
+  &:active {
+    transform: scale(0.98);
+  }
   p {
     color: #201a18;
     font-family: "Arima";
@@ -126,6 +129,14 @@ export const BackgroundImg = styled.div`
     margin-top: 20px;
   }
 `;
+export const ActiveImg = styled.img`
+  position: "relative";
+  margin-bottom: -120px;
+  &:active {
+    transform: scale(0.98);
+  }
+`;
+
 export const BackRightCon = styled.div`
   width: 800px;
   height: 600px;
@@ -172,6 +183,7 @@ export const ButtonsCon = styled.div`
   gap: 20px;
   z-index: 5;
 `;
+
 export const GreenBtn = styled.button`
   width: 170px;
   height: 60px;
@@ -188,9 +200,7 @@ export const GreenBtn = styled.button`
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  &:hover {
-    background-color: greenyellow;
-  }
+
   &:active {
     transform: scale(0.98);
   }
@@ -223,9 +233,7 @@ export const YellowBtn = styled.button`
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  &:hover {
-    background-color: greenyellow;
-  }
+
   &:active {
     transform: scale(0.98);
   }
@@ -235,8 +243,9 @@ export const OurServices = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
   background-color: #f9f6f2;
+  width: 1539px;
+
   h4 {
     color: var(--pragrap, #50413c);
     text-align: center;
@@ -246,6 +255,7 @@ export const OurServices = styled.div`
     font-weight: 900;
     line-height: 22px;
     margin-bottom: 10px;
+    margin-top: 70px;
   }
   h2 {
     color: var(--Black, #2b221f);
@@ -267,6 +277,7 @@ export const HoneyPro = styled.div`
   box-shadow: 0px 7px 31px 0px #f8f2ea;
   padding: 60px 40px;
   margin-top: 50px;
+  cursor: pointer;
 
   &:first-child {
     border-left: 3px solid var(--yellow, #fcc41a);
@@ -281,7 +292,14 @@ export const HoneyPro = styled.div`
     line-height: 35px;
     margin-top: 50px;
   }
+
+  &:active {
+    transform: scale(0.98);
+  }
 `;
+
+// WhyUse Styles
+
 export const WhyUsCon = styled.div`
   display: flex;
   flex-direction: column;
@@ -309,5 +327,103 @@ export const WhyUsCon = styled.div`
     font-weight: 900;
     line-height: 60px;
     margin-top: 30px;
+  }
+`;
+
+export const WhyUsLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+`;
+
+export const WhyUsRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+`;
+
+// Download Section Styles
+
+export const DownloadCon = styled.div`
+  width: 1290px;
+  height: 481px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--yellow, #fcc41a);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 150px;
+  padding: 0 100px;
+
+  p {
+    color: var(--pragrap, #50413c);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+    width: 89px;
+  }
+
+  h2 {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    margin-top: 32px;
+  }
+`;
+export const DownloadMini = styled.img`
+  width: 180px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &.Google {
+    width: 200px;
+    height: 75px;
+    margin-left: 20px;
+    margin-bottom: -12px;
+  }
+`;
+export const Con = styled.div`
+  width: 455px;
+  height: 625px;
+  z-index: 1;
+  img {
+    max-width: 555px;
+    max-height: 590px;
+  }
+`;
+
+// Our Products Section Styles
+
+export const OurProducts = styled.div`
+  width: 1539px;
+  height: auto;
+  background: var(--Niotrol, #f9f6f2);
+  z-index: -1;
+  margin-top: -230px;
+
+  .OurProduct {
+    margin-top: 320px;
+
+    p {
+      color: var(--pragrap, #50413c);
+      text-align: center;
+      font-family: "Arima";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 22px;
+    }
   }
 `;

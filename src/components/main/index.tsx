@@ -1,13 +1,20 @@
 import {
+  ActiveImg,
   BackgroundImg,
   BackRightCon,
   ButtonsCon,
+  Con,
+  DownloadCon,
+  DownloadMini,
   GreenBtn,
   HoneyPro,
   MainCon,
+  OurProducts,
   OurServices,
   PromotesCon,
   WhyUsCon,
+  WhyUsLeft,
+  WhyUsRight,
   YellowBtn,
 } from "../styles/style";
 import honey from "../assets/honey.jpg";
@@ -20,6 +27,16 @@ import shopping from "../assets/shopping-bag 2.svg";
 import honey007 from "../assets/007-honey.svg";
 import arrowDown from "../assets/Arrow down.svg";
 import bee from "../assets/bee.png";
+import natural from "../assets/natural.svg";
+import flower from "../assets/flower.svg";
+import honeyComb from "../assets/honey-comb.svg";
+import beesSeal from "../assets/bees-seal.svg";
+import hundred from "../assets/100.svg";
+import increase from "../assets/increase.svg";
+import frame2 from "../assets/Frame2.svg";
+import apple from "../assets/apple.png";
+import google from "../assets/google.png";
+import ai from "../assets/ai.png";
 
 const MainPage = () => {
   return (
@@ -53,17 +70,7 @@ const MainPage = () => {
               <GreenBtn>Contact us</GreenBtn>
               <YellowBtn>Shop Now</YellowBtn>
             </ButtonsCon>
-            <img
-              src={arrowDown}
-              alt="arrow-img"
-              style={{
-                width: "120px",
-                height: "120px",
-                position: "relative",
-                marginBottom: "-60px",
-                marginTop: "20px",
-              }}
-            />
+            <ActiveImg src={arrowDown} alt="arrow-img" />
           </div>
         </BackgroundImg>
         <BackRightCon>
@@ -116,18 +123,50 @@ const MainPage = () => {
         <h4>Why Us</h4>
         <img src={frame} alt="frame" />
         <h2>Why Choose Our Products</h2>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div style={{ display: "flex", marginTop: "30px", gap: "80px" }}>
+          <WhyUsLeft>
+            <img src={natural} alt="natural-img" />
+            <img src={flower} alt="flower-img" />
+            <img src={honeyComb} alt="honey-comb" />
+          </WhyUsLeft>
+          <img
+            src={bee}
+            alt="bee-img"
+            style={{ width: "411px", height: "434px" }}
+          />
+          <WhyUsRight>
+            <img src={beesSeal} alt="beesSeal-img" />
+            <img src={hundred} alt="hundred-img" />
+            <img src={increase} alt="increase-img" />
+          </WhyUsRight>
         </div>
-        <img
-          src={bee}
-          alt="bee-img"
-          style={{ width: "411px", height: "434px" }}
-        />
-        <div></div>
       </WhyUsCon>
+      <DownloadCon>
+        <div>
+          <div className="beeberry">
+            {" "}
+            <p>Beeberry</p>
+            <img src={frame2} alt="frame2-img" />
+          </div>
+          <h2>
+            Download Our App Today. <br />
+            And Try From Your Phone
+          </h2>
+          <DownloadMini src={apple} alt="appleStore-img" />
+          <DownloadMini src={google} alt="googlePlay-img" className="Google" />
+        </div>
+        <Con>
+          <img src={ai} alt="ai-img" />
+        </Con>
+      </DownloadCon>
+      <OurProducts>
+        <div className="OurProduct">
+          <p>Our Products</p>
+          <img src={frame} alt="frame" />
+          <h2>Our 100% Fresh Honey</h2>
+        </div>
+        <GreenBtn style={{ zIndex: "5" }}>All products</GreenBtn>
+      </OurProducts>
     </MainCon>
   );
 };
