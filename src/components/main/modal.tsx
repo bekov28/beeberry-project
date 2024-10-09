@@ -52,7 +52,7 @@ const AppModal = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    zIndex: "2",
+                    // zIndex: "2",
                   }}
                 >
                   <img

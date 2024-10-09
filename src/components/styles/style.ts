@@ -1,4 +1,3 @@
-import { editableInputTypes } from "@testing-library/user-event/dist/utils";
 import styled from "styled-components";
 
 export const MainCon = styled.div`
@@ -16,7 +15,7 @@ export const NavbarCon = styled.div`
   justify-content: center;
   align-items: center;
   gap: 200px;
-  background: #f9f6f2;
+  background: var(--Black-separate, #201a18);
   z-index: 5;
 `;
 
@@ -28,7 +27,7 @@ export const NavFirstCon = styled.div`
   cursor: pointer;
   p {
     color: #201a18;
-    font-family: "Arima Madurai";
+    font-family: "Arima";
     font-size: 35px;
     font-style: normal;
     font-weight: 900;
@@ -94,23 +93,10 @@ export const IconCon = styled.div`
   }
 `;
 
-// Home Styles
-
-export const HomeNavbar = styled.div`
-  height: 120px;
-  flex-shrink: 0;
-  display: flex;
-  padding: 20px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 200px;
-  background: var(--Black-separate, #201a18);
-`;
-
 export const BackgroundImg = styled.div`
   flex-shrink: 0;
   background-color: #201a18;
-  width: 719px;
+  width: 819px;
   height: 600px;
   z-index: 0;
   position: relative;
@@ -122,7 +108,7 @@ export const BackgroundImg = styled.div`
 
   h1 {
     color: #fff;
-    font-family: "Arima Madurai", sans-serif;
+    font-family: "Arima", sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 900;
@@ -141,18 +127,17 @@ export const BackgroundImg = styled.div`
   }
 `;
 export const BackRightCon = styled.div`
-  width: 900px;
-  height: 800px;
+  width: 800px;
+  height: 600px;
   overflow: hidden;
   flex-shrink: 0;
-  border-radius: 50%;
-  z-index: 1;
-  margin-top: -340px;
-  overflow: hidden;
-  margin-left: -100px;
+  margin-left: -80px;
+  display: flex;
+  margin-top: -120px;
+  z-index: 0;
 
   img {
-    width: 1000px;
+    width: 100%;
     height: auto;
     object-fit: cover;
   }
@@ -185,15 +170,15 @@ export const ButtonsCon = styled.div`
   margin-top: 30px;
   display: flex;
   gap: 20px;
+  z-index: 5;
 `;
 export const GreenBtn = styled.button`
   width: 170px;
   height: 60px;
   flex-shrink: 0;
-  background-color: #639533;
+  background-color: green;
   color: white;
   text-transform: uppercase;
-  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -201,16 +186,32 @@ export const GreenBtn = styled.button`
   line-height: 30px;
   letter-spacing: 0.63px;
   border-radius: 8px;
-  :hover {
-    background-color: blue;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: greenyellow;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+  &.More {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.63px;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   }
 `;
+
 export const YellowBtn = styled.button`
   width: 170px;
   height: 60px;
   flex-shrink: 0;
   background-color: var(--yellow, #fcc41a);
-  color: black;
   text-transform: uppercase;
   color: var(--Black, #2b221f);
   font-family: Roboto;
@@ -220,4 +221,93 @@ export const YellowBtn = styled.button`
   line-height: 30px;
   letter-spacing: 0.63px;
   border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: greenyellow;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+`;
+export const OurServices = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  background-color: #f9f6f2;
+  h4 {
+    color: var(--pragrap, #50413c);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    color: var(--Black, #2b221f);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    margin-top: 30px;
+  }
+`;
+export const HoneyPro = styled.div`
+  width: 300px;
+  height: 243px;
+  flex-shrink: 0;
+  border-radius: 0px 20px 20px 0px;
+  background: #fff;
+  box-shadow: 0px 7px 31px 0px #f8f2ea;
+  padding: 60px 40px;
+  margin-top: 50px;
+
+  &:first-child {
+    border-left: 3px solid var(--yellow, #fcc41a);
+  }
+
+  p {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    margin-top: 50px;
+  }
+`;
+export const WhyUsCon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  background: #fff;
+
+  h4 {
+    color: var(--pragrap, #50413c);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    color: var(--Black, #2b221f);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    margin-top: 30px;
+  }
 `;
