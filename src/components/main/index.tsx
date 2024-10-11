@@ -9,10 +9,14 @@ import {
   GreenBtn,
   HoneyPro,
   MainCon,
+  ModalCon,
   OurProducts,
   OurServices,
   PromotesCon,
+  SliderCon,
+  WhatWeCon,
   WhyUsCon,
+  WhyUsImg,
   WhyUsLeft,
   WhyUsRight,
   YellowBtn,
@@ -37,8 +41,57 @@ import frame2 from "../assets/Frame2.svg";
 import apple from "../assets/apple.png";
 import google from "../assets/google.png";
 import ai from "../assets/ai.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import img1 from "../main/carouselAssets/1.jpg";
+import img2 from "../main/carouselAssets/2.jpg";
+import img3 from "../main/carouselAssets/3.jpg";
+import img4 from "../main/carouselAssets/4.jpg";
+import img5 from "../main/carouselAssets/5.jpg";
+import img6 from "../main/carouselAssets/6.jpg";
+import cart from "../main/carouselAssets/shopping-bag 1.svg";
 
 const MainPage = () => {
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    vertical: false,
+    arrows: true,
+    centerMode: true,
+    centerPadding: "15px",
+    responsive: [
+      {
+        breakpoint: 1250,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "0px",
+        },
+      },
+    ],
+  };
   return (
     <MainCon>
       <div
@@ -77,20 +130,9 @@ const MainPage = () => {
           <img src={honey} alt="honey" />
         </BackRightCon>
       </div>
-      <div
-        style={{
-          marginTop: "-400px",
-          zIndex: "1",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "fit-content",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
+      <ModalCon>
         <AppModal />
-      </div>
+      </ModalCon>
       <OurServices>
         <h4>Our Services</h4>
         <img src={frame} alt="frame" />
@@ -129,7 +171,7 @@ const MainPage = () => {
             <img src={flower} alt="flower-img" />
             <img src={honeyComb} alt="honey-comb" />
           </WhyUsLeft>
-          <img
+          <WhyUsImg
             src={bee}
             alt="bee-img"
             style={{ width: "411px", height: "434px" }}
@@ -162,10 +204,184 @@ const MainPage = () => {
       <OurProducts>
         <div className="OurProduct">
           <p>Our Products</p>
-          <img src={frame} alt="frame" />
-          <h2>Our 100% Fresh Honey</h2>
+          <div>
+            <img src={frame} alt="frame" />
+          </div>
         </div>
-        <GreenBtn style={{ zIndex: "5" }}>All products</GreenBtn>
+        <div className="OurCon">
+          <h2>Our 100% Fresh Honey</h2>
+          <GreenBtn style={{ zIndex: "5" }} className="More">
+            All products
+          </GreenBtn>
+        </div>
+        <SliderCon>
+          <Slider {...settings}>
+            <div className="MiniCarousel">
+              <img src={img1} alt="img1" />
+              <div className="AlignCon">
+                <p>Dark Honey</p>
+                <h3>$11.50</h3>
+                <div style={{ display: "flex" }}>
+                  <h6>Weight: </h6>
+                  <strong>1KG</strong>
+                </div>
+              </div>
+              <div
+                style={{
+                  width: "55px",
+                  height: "55px",
+                  backgroundColor: "white",
+                  borderRadius: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  src={cart}
+                  alt="cart"
+                  style={{
+                    width: "17px",
+                    height: "17px",
+                    position: "absolute",
+                    bottom: "-25px",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    zIndex: 10,
+                  }}
+                />
+              </div>
+            </div>
+            <div className="MiniCarousel">
+              <img src={img2} alt="img2" />
+              <div className="AlignCon">
+                <p>Premium Honey</p>
+                <h3>$10.50</h3>
+                <div style={{ display: "flex" }}>
+                  <h6>Weight: </h6>
+                  <strong>1KG</strong>
+                </div>
+              </div>
+              <img
+                src={cart}
+                alt="cart"
+                style={{
+                  width: "55px",
+                  height: "55px",
+                  position: "absolute",
+                  bottom: "-25px",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  zIndex: 10,
+                }}
+              />
+            </div>
+            <div className="MiniCarousel">
+              <img src={img3} alt="img3" />
+              <div className="AlignCon">
+                <p>Organic Honey</p>
+                <h3>$12.50</h3>
+                <div style={{ display: "flex" }}>
+                  <h6>Weight: </h6>
+                  <strong>1KG</strong>
+                </div>
+              </div>
+              <img
+                src={cart}
+                alt="cart"
+                style={{
+                  width: "55px",
+                  height: "55px",
+                  position: "absolute",
+                  bottom: "-25px",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  zIndex: 10,
+                }}
+              />
+            </div>
+            <div className="MiniCarousel">
+              <img src={img4} alt="img4" />
+              <div className="AlignCon">
+                <p>Jarrah Honey</p>
+                <h3>$13.50</h3>
+                <div style={{ display: "flex" }}>
+                  <h6>Weight: </h6>
+                  <strong>1KG</strong>
+                </div>
+              </div>
+              <img
+                src={cart}
+                alt="cart"
+                style={{
+                  width: "55px",
+                  height: "55px",
+                  position: "absolute",
+                  bottom: "-25px",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  zIndex: 10,
+                }}
+              />
+            </div>
+            <div className="MiniCarousel">
+              <img src={img5} alt="img1" />
+              <div className="AlignCon">
+                <p>New Honey</p>
+                <h3>$12.75</h3>
+                <div style={{ display: "flex" }}>
+                  <h6>Weight: </h6>
+                  <strong>1KG</strong>
+                </div>
+              </div>
+              <img
+                src={cart}
+                alt="cart"
+                style={{
+                  width: "55px",
+                  height: "55px",
+                  position: "absolute",
+                  bottom: "-25px",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  zIndex: 10,
+                }}
+              />
+            </div>
+            <div className="MiniCarousel">
+              <img src={img6} alt="img1" />
+              <div className="AlignCon">
+                <p>Sweet Honey</p>
+                <h3>$11.50</h3>
+                <div style={{ display: "flex" }}>
+                  <h6>Weight: </h6>
+                  <strong>1KG</strong>
+                </div>
+              </div>
+              <img
+                src={cart}
+                alt="cart"
+                style={{
+                  width: "55px",
+                  height: "55px",
+                  position: "absolute",
+                  bottom: "-25px",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  zIndex: 10,
+                }}
+              />
+            </div>
+          </Slider>
+        </SliderCon>
+        <WhatWeCon>
+          <h4>What We Serve</h4>
+          <img src={frame} alt="frame" />
+          <h2>Your Favorite Honey Delivery </h2>
+          <div
+            style={{ display: "flex", marginTop: "30px", gap: "80px" }}
+          ></div>
+        </WhatWeCon>
       </OurProducts>
     </MainCon>
   );

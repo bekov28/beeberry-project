@@ -153,6 +153,21 @@ export const BackRightCon = styled.div`
     object-fit: cover;
   }
 `;
+
+export const ModalCon = styled.div`
+  margin-top: -400px;
+  z-index: 0;
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  width: "fit-content";
+  margin-left: "auto";
+  margin-right: "auto";
+  &:active {
+    transform: scale(0.98);
+  }
+`;
+
 export const PromotesCon = styled.div`
   display: flex;
   flex-direction: column;
@@ -341,6 +356,11 @@ export const WhyUsRight = styled.div`
   flex-direction: column;
   gap: 60px;
 `;
+export const WhyUsImg = styled.img`
+  &:active {
+    transform: scale(0.98);
+  }
+`;
 
 // Download Section Styles
 
@@ -355,6 +375,7 @@ export const DownloadCon = styled.div`
   align-items: center;
   margin-top: 150px;
   padding: 0 100px;
+  z-index: 1;
 
   p {
     color: var(--pragrap, #50413c);
@@ -401,6 +422,9 @@ export const Con = styled.div`
   img {
     max-width: 555px;
     max-height: 590px;
+    &:active {
+      transform: scale(0.98);
+    }
   }
 `;
 
@@ -408,13 +432,19 @@ export const Con = styled.div`
 
 export const OurProducts = styled.div`
   width: 1539px;
-  height: auto;
+  height: 1200px;
   background: var(--Niotrol, #f9f6f2);
-  z-index: -1;
   margin-top: -230px;
+  padding-left: 140px;
+  padding-right: 140px;
 
   .OurProduct {
-    margin-top: 320px;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    z-index: 5;
+    width: 97px;
 
     p {
       color: var(--pragrap, #50413c);
@@ -425,5 +455,169 @@ export const OurProducts = styled.div`
       font-weight: 900;
       line-height: 22px;
     }
+  }
+
+  .OurCon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    margin-top: 20px;
+
+    h2 {
+      color: var(--Black, #2b221f);
+      font-family: "Arima";
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 60px;
+    }
+  }
+`;
+
+export const SliderCon = styled.div`
+  width: 100%;
+  z-index: 0;
+  .MiniCarousel {
+    width: 300px;
+    height: 468px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 207px 207px;
+    border: 1px solid rgba(43, 34, 31, 0.1);
+    background: #f9f6f2;
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    background: #F9F6F2;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    &:hover {
+      background: #fff;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+  .slick-slide {
+    padding: 0 30px;
+  }
+
+  img {
+    width: 134px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
+  .AlignCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    p {
+      color: var(--Black, #2b221f);
+      text-align: center;
+      font-family: "Arima";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 35px;
+      width: 175px;
+    }
+
+    h3 {
+      color: var(--pragrap, #50413c);
+      font-family: Roboto;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 35px;
+    }
+    h6 {
+      color: #50413c;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px;
+    }
+    strong {
+      color: #50413c;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 35px;
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    width: 55px;
+    height: 55px; /* Adjust height */
+    background-color: white; /* Change background color */
+    border-radius: 50%; /* Make the arrow circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    stroke-width: 1px;
+    border: 2px solid transparent;
+    stroke: rgba(43, 34, 31, 0.1);
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black; /* Set the arrow icon color to black */
+    font-size: 20px; /* Adjust font size as needed */
+  }
+
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 10px;
+  }
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: darkgray;
+  }
+`;
+
+// What We Service Section Styles
+export const WhatWeCon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f9f6f2;
+  margin-top: 100px;
+  width: 100%;
+  
+  h4 {
+    color: var(--pragrap, #50413c);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    color: var(--Black, #2b221f);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    margin-top: 30px;
   }
 `;
