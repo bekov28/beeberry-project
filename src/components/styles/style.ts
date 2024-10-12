@@ -66,6 +66,9 @@ export const MenuCon = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    &:active {
+      transform: scale(0.98);
+    }
   }
   .About {
     max-width: 100%;
@@ -93,6 +96,12 @@ export const IconCon = styled.div`
   }
   .whiteP {
     color: white;
+  }
+  img {
+    cursor: pointer;
+    &:active {
+      transform: scale(0.98);
+    }
   }
 `;
 
@@ -432,7 +441,7 @@ export const Con = styled.div`
 
 export const OurProducts = styled.div`
   width: 1539px;
-  height: 1200px;
+  height: auto;
   background: var(--Niotrol, #f9f6f2);
   margin-top: -230px;
   padding-left: 140px;
@@ -478,6 +487,7 @@ export const OurProducts = styled.div`
 export const SliderCon = styled.div`
   width: 100%;
   z-index: 0;
+
   .MiniCarousel {
     width: 300px;
     height: 468px;
@@ -492,13 +502,17 @@ export const SliderCon = styled.div`
     align-items: center;
     overflow: visible;
     position: relative;
-    background: #F9F6F2;
+    background: #f9f6f2;
     margin-bottom: 30px;
     cursor: pointer;
 
     &:hover {
       background: #fff;
+      .Yellow {
+        background-color: #fcc41a !important;
+      }
     }
+
     &:active {
       transform: scale(0.98);
     }
@@ -556,6 +570,7 @@ export const SliderCon = styled.div`
       line-height: 35px;
     }
   }
+
   .slick-prev,
   .slick-next {
     width: 55px;
@@ -598,8 +613,8 @@ export const WhatWeCon = styled.div`
   align-items: center;
   background: #f9f6f2;
   margin-top: 100px;
-  width: 100%;
-  
+  margin-bottom: 130px;
+
   h4 {
     color: var(--pragrap, #50413c);
     text-align: center;
@@ -619,5 +634,140 @@ export const WhatWeCon = styled.div`
     font-weight: 900;
     line-height: 60px;
     margin-top: 30px;
+  }
+`;
+
+export const YourCon = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+`;
+
+export const EasyCon = styled.div`
+  width: 380px;
+  height: 317px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: -8px 10px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 60px;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.98);
+  }
+  &:hover {
+    background-color: #f8f8ff;
+  }
+
+  .EasyMiniText {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    h2 {
+      color: var(--Black, #2b221f);
+      font-family: "Arima";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 35px;
+      display: flex;
+      justify-content: left;
+    }
+    p {
+      color: var(--pragrap, #50413c);
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      margin-top: 15px;
+    }
+  }
+`;
+export const Testimonial = styled.div`
+  width: 1539px;
+  height: 760px;
+  flex-shrink: 0;
+  background: var(--Black, #2b221f);
+
+  .testCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    h4 {
+      color: white;
+      text-align: center;
+      font-family: "Arima";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: white;
+      text-align: center;
+      font-family: "Arima";
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 60px;
+      margin-top: 30px;
+    }
+  }
+`;
+export const CarouselItem = styled.div`
+  width: 480px;
+  height: 314px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--Black-separate, #201a18);
+  box-shadow: 0px 4px 4px 0px rgba(43, 32, 18, 0.03);
+  padding: 50px;
+  margin-top: 30px;
+  border: 1px solid white;
+  cursor: pointer;
+
+  .UpperCon {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+      border-radius: 50%;
+    }
+    p {
+      color: #fff;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+    }
+    h4 {
+      color: #fff;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 29px;
+      margin-top: 10px;
+    }
+  }
+  h3 {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    margin-top: 10px;
+    width: 400px;
   }
 `;

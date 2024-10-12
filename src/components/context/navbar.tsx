@@ -8,7 +8,7 @@ import {
 import { NavLink } from "react-router-dom";
 import arrow from "../assets/arrow.svg";
 import light from "../assets/light.svg";
-import searchHome from "../assets/heartHome.svg";
+import searchHome from "../assets/bsearch.svg";
 import heartHome from "../assets/heartHome.svg";
 import shopHome from "../assets/shopHome.svg";
 

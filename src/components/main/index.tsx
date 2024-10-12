@@ -3,9 +3,11 @@ import {
   BackgroundImg,
   BackRightCon,
   ButtonsCon,
+  CarouselItem,
   Con,
   DownloadCon,
   DownloadMini,
+  EasyCon,
   GreenBtn,
   HoneyPro,
   MainCon,
@@ -14,12 +16,14 @@ import {
   OurServices,
   PromotesCon,
   SliderCon,
+  Testimonial,
   WhatWeCon,
   WhyUsCon,
   WhyUsImg,
   WhyUsLeft,
   WhyUsRight,
   YellowBtn,
+  YourCon,
 } from "../styles/style";
 import honey from "../assets/honey.jpg";
 import mark from "../assets/mark.svg";
@@ -51,6 +55,18 @@ import img4 from "../main/carouselAssets/4.jpg";
 import img5 from "../main/carouselAssets/5.jpg";
 import img6 from "../main/carouselAssets/6.jpg";
 import cart from "../main/carouselAssets/shopping-bag 1.svg";
+import easy from "../assets/order-food 1.svg";
+import ellipse from "../assets/Ellipse 119.svg";
+import between from "../assets/between.svg";
+import card from "../assets/debit-card 1.svg";
+import shipped from "../assets/shipped 1.svg";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import man1 from "..//assets/man1.jpg";
+import man2 from "..//assets/man2.jpg";
+import man3 from "..//assets/man3.jpg";
+import man4 from "..//assets/man4.jpg";
+import man5 from "..//assets/man5.jpg";
 
 const MainPage = () => {
   var settings = {
@@ -91,6 +107,23 @@ const MainPage = () => {
         },
       },
     ],
+  };
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
   };
   return (
     <MainCon>
@@ -227,6 +260,7 @@ const MainPage = () => {
                 </div>
               </div>
               <div
+                className="Yellow"
                 style={{
                   width: "55px",
                   height: "55px",
@@ -235,6 +269,11 @@ const MainPage = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  position: "absolute",
+                  bottom: "-25px",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  zIndex: 10,
                 }}
               >
                 <img
@@ -243,11 +282,6 @@ const MainPage = () => {
                   style={{
                     width: "17px",
                     height: "17px",
-                    position: "absolute",
-                    bottom: "-25px",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    zIndex: 10,
                   }}
                 />
               </div>
@@ -262,19 +296,32 @@ const MainPage = () => {
                   <strong>1KG</strong>
                 </div>
               </div>
-              <img
-                src={cart}
-                alt="cart"
+              <div
+                className="Yellow"
                 style={{
                   width: "55px",
                   height: "55px",
+                  backgroundColor: "white",
+                  borderRadius: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                   position: "absolute",
                   bottom: "-25px",
                   left: "50%",
                   transform: "translateX(-50%)",
                   zIndex: 10,
                 }}
-              />
+              >
+                <img
+                  src={cart}
+                  alt="cart"
+                  style={{
+                    width: "17px",
+                    height: "17px",
+                  }}
+                />
+              </div>
             </div>
             <div className="MiniCarousel">
               <img src={img3} alt="img3" />
@@ -286,19 +333,32 @@ const MainPage = () => {
                   <strong>1KG</strong>
                 </div>
               </div>
-              <img
-                src={cart}
-                alt="cart"
+              <div
+                className="Yellow"
                 style={{
                   width: "55px",
                   height: "55px",
+                  backgroundColor: "white",
+                  borderRadius: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                   position: "absolute",
                   bottom: "-25px",
                   left: "50%",
                   transform: "translateX(-50%)",
                   zIndex: 10,
                 }}
-              />
+              >
+                <img
+                  src={cart}
+                  alt="cart"
+                  style={{
+                    width: "17px",
+                    height: "17px",
+                  }}
+                />
+              </div>
             </div>
             <div className="MiniCarousel">
               <img src={img4} alt="img4" />
@@ -310,19 +370,32 @@ const MainPage = () => {
                   <strong>1KG</strong>
                 </div>
               </div>
-              <img
-                src={cart}
-                alt="cart"
+              <div
+                className="Yellow"
                 style={{
                   width: "55px",
                   height: "55px",
+                  backgroundColor: "white",
+                  borderRadius: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                   position: "absolute",
                   bottom: "-25px",
                   left: "50%",
                   transform: "translateX(-50%)",
                   zIndex: 10,
                 }}
-              />
+              >
+                <img
+                  src={cart}
+                  alt="cart"
+                  style={{
+                    width: "17px",
+                    height: "17px",
+                  }}
+                />
+              </div>
             </div>
             <div className="MiniCarousel">
               <img src={img5} alt="img1" />
@@ -334,19 +407,32 @@ const MainPage = () => {
                   <strong>1KG</strong>
                 </div>
               </div>
-              <img
-                src={cart}
-                alt="cart"
+              <div
+                className="Yellow"
                 style={{
                   width: "55px",
                   height: "55px",
+                  backgroundColor: "white",
+                  borderRadius: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                   position: "absolute",
                   bottom: "-25px",
                   left: "50%",
                   transform: "translateX(-50%)",
                   zIndex: 10,
                 }}
-              />
+              >
+                <img
+                  src={cart}
+                  alt="cart"
+                  style={{
+                    width: "17px",
+                    height: "17px",
+                  }}
+                />
+              </div>
             </div>
             <div className="MiniCarousel">
               <img src={img6} alt="img1" />
@@ -358,19 +444,32 @@ const MainPage = () => {
                   <strong>1KG</strong>
                 </div>
               </div>
-              <img
-                src={cart}
-                alt="cart"
+              <div
+                className="Yellow"
                 style={{
                   width: "55px",
                   height: "55px",
+                  backgroundColor: "white",
+                  borderRadius: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                   position: "absolute",
                   bottom: "-25px",
                   left: "50%",
                   transform: "translateX(-50%)",
                   zIndex: 10,
                 }}
-              />
+              >
+                <img
+                  src={cart}
+                  alt="cart"
+                  style={{
+                    width: "17px",
+                    height: "17px",
+                  }}
+                />
+              </div>
             </div>
           </Slider>
         </SliderCon>
@@ -381,8 +480,199 @@ const MainPage = () => {
           <div
             style={{ display: "flex", marginTop: "30px", gap: "80px" }}
           ></div>
+          <YourCon>
+            <EasyCon>
+              <img src={easy} alt="easy-img" style={{ zIndex: "1" }} />
+              <img
+                src={ellipse}
+                alt="ellipse-img"
+                style={{ zIndex: "0", marginLeft: "-75px" }}
+              />
+              <div className="EasyMiniText">
+                <h2>Easy To Order</h2>
+                <p>
+                  Raw honey contains an array <br />
+                  of plant chemicals that{" "}
+                </p>
+              </div>
+            </EasyCon>
+            <img src={between} alt="between-img" />
+            <EasyCon>
+              <img src={card} alt="card-img" style={{ zIndex: "1" }} />
+              <img
+                src={ellipse}
+                alt="ellipse-img"
+                style={{ zIndex: "0", marginLeft: "-75px" }}
+              />
+              <div className="EasyMiniText">
+                <h2>Easy To Payment</h2>
+                <p>
+                  Raw honey contains an array <br />
+                  of plant chemicals that{" "}
+                </p>
+              </div>
+            </EasyCon>
+            <img src={between} alt="between-img" />
+            <EasyCon>
+              <img src={shipped} alt="shipped-img" style={{ zIndex: "1" }} />
+              <img
+                src={ellipse}
+                alt="ellipse-img"
+                style={{ zIndex: "0", marginLeft: "-105px" }}
+              />
+              <div className="EasyMiniText">
+                <h2>Fastest Delivery</h2>
+                <p>
+                  Raw honey contains an array <br />
+                  of plant chemicals that{" "}
+                </p>
+              </div>
+            </EasyCon>
+          </YourCon>
         </WhatWeCon>
       </OurProducts>
+      <Testimonial>
+        <div className="testCon">
+          <h4>Testimonial</h4>
+          <img src={frame} alt="frame" />
+          <h2>What People Say About Products </h2>
+          <div
+            style={{ display: "flex", marginTop: "30px", gap: "80px" }}
+          ></div>
+        </div>
+        <Carousel
+          swipeable={true}
+          draggable={true}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <CarouselItem>
+            <div className="UpperCon">
+              <div style={{ marginTop: "10px", display: "flex" }}>
+                <img src={man1} alt="man1" />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    marginLeft: "20px",
+                  }}
+                >
+                  <p>Savannah Hopkins</p>
+                  <h4>29 Nov 2022</h4>
+                </div>
+              </div>
+              <h3>
+                I have taken a long time to write this review mainly because we
+                don't consume honey regularly. But, now we were sick and some
+                ayurvedic preparations needed honey as am ingredient. That's
+                when we started consuming this honey. I must say 🤗
+              </h3>
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+            <div className="UpperCon">
+              <div style={{ marginTop: "10px", display: "flex" }}>
+                <img src={man2} alt="man2" />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    marginLeft: "20px",
+                  }}
+                >
+                  <p>Leslie Alexander</p>
+                  <h4>24 Sep 2023</h4>
+                </div>
+              </div>
+              <h3>
+                When I received the product, I received a thank you note from
+                the company on Whatsapp and a phone call, which was intended to
+                describe how the honey had been harvested. This is very
+                irritating, I don't know why you have an online platform.😊 🤩
+              </h3>
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+            <div className="UpperCon">
+              <div style={{ marginTop: "10px", display: "flex" }}>
+                <img src={man3} alt="man1" />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    marginLeft: "20px",
+                  }}
+                >
+                  <p>Savannah Hopkins</p>
+                  <h4>29 Nov 2022</h4>
+                </div>
+              </div>
+              <h3>
+                I have responded to the amounts of money offered in Honey Gold
+                from places I regularly shop. I have activated the gold for the
+                product. All my purchases with Kate Spade honey gold as
+                advertised and activated are not awarded in my account. 🤗
+              </h3>
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+            <div className="UpperCon">
+              <div style={{ marginTop: "10px", display: "flex" }}>
+                <img src={man4} alt="man4" />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    marginLeft: "20px",
+                  }}
+                >
+                  <p>Susanna Hopkins</p>
+                  <h4>29 Nov 2023</h4>
+                </div>
+              </div>
+              <h3>
+                Finally a truly useful deal website that really provides a way
+                so that you never miss a deal. No more searching for coupon
+                codes or wasting valuable time trying to fin ones that work.
+                This website has an extention that automatically searches
+              </h3>
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+            <div className="UpperCon">
+              <div style={{ marginTop: "10px", display: "flex" }}>
+                <img src={man5} alt="man5" />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    marginLeft: "20px",
+                  }}
+                >
+                  <p>Laura Obama</p>
+                  <h4>29 Jan 2024</h4>
+                </div>
+              </div>
+              <h3>
+                I have responded to the amounts of money offered in Honey Gold
+                from places I regularly shop. I have activated the gold for the
+                product. All my purchases with Kate Spade honey gold as
+                advertised and activated are not awarded in my account. 🤗
+              </h3>
+            </div>
+          </CarouselItem>
+        </Carousel>
+        ;
+      </Testimonial>
     </MainCon>
   );
 };
