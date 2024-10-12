@@ -1,4 +1,4 @@
-import { Route, Router, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/context/navbar";
 import ScrollTop from "./components/scrollToTop/scroll";
 import MainPage from "./components/main";

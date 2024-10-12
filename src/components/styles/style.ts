@@ -17,9 +17,12 @@ export const NavbarCon = styled.div`
   gap: 200px;
   background: var(--Black-separate, #201a18);
   z-index: 5;
+  border: 4px solid red;
 `;
 
-export const NavFirstMainCon = styled.div``;
+export const NavFirstMainCon = styled.div`
+  border: 4px solid red;
+`;
 
 export const NavFirstCon = styled.div`
   display: flex;
@@ -47,6 +50,7 @@ export const MenuCon = styled.div`
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  border: 4px solid red;
   p {
     color: #201a18;
     font-size: 14px;
@@ -83,6 +87,7 @@ export const IconCon = styled.div`
   gap: 20px;
   justify-content: center;
   align-items: center;
+  border: 4px solid red;
 
   p {
     color: #201a18;
@@ -117,6 +122,7 @@ export const BackgroundImg = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 115px;
+  border: 4px solid red;
 
   h1 {
     color: #fff;
@@ -141,13 +147,14 @@ export const BackgroundImg = styled.div`
 export const ActiveImg = styled.img`
   position: "relative";
   margin-bottom: -120px;
+
   &:active {
     transform: scale(0.98);
   }
 `;
 
 export const BackRightCon = styled.div`
-  width: 800px;
+  width: 780px;
   height: 600px;
   overflow: hidden;
   flex-shrink: 0;
@@ -155,6 +162,7 @@ export const BackRightCon = styled.div`
   display: flex;
   margin-top: -120px;
   z-index: 0;
+  border: 4px solid red;
 
   img {
     width: 100%;
@@ -172,6 +180,7 @@ export const ModalCon = styled.div`
   width: "fit-content";
   margin-left: "auto";
   margin-right: "auto";
+
   &:active {
     transform: scale(0.98);
   }
@@ -182,6 +191,7 @@ export const PromotesCon = styled.div`
   flex-direction: column;
   gap: 15px;
   margin-top: 20px;
+
   p {
     color: #fff;
     font-family: Roboto;
@@ -268,7 +278,7 @@ export const OurServices = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #f9f6f2;
-  width: 1539px;
+  width: 1520px;
 
   h4 {
     color: var(--pragrap, #50413c);
@@ -440,7 +450,7 @@ export const Con = styled.div`
 // Our Products Section Styles
 
 export const OurProducts = styled.div`
-  width: 1539px;
+  width: 1520px;
   height: auto;
   background: var(--Niotrol, #f9f6f2);
   margin-top: -230px;
@@ -686,7 +696,7 @@ export const EasyCon = styled.div`
   }
 `;
 export const Testimonial = styled.div`
-  width: 1539px;
+  width: 1520px;
   height: 760px;
   flex-shrink: 0;
   background: var(--Black, #2b221f);
@@ -731,6 +741,12 @@ export const CarouselItem = styled.div`
   margin-top: 30px;
   border: 1px solid white;
   cursor: pointer;
+  &:active {
+    transform: scale(0.99);
+  }
+  &:hover {
+    background: #191970;
+  }
 
   .UpperCon {
     display: flex;
