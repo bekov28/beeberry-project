@@ -2,6 +2,13 @@ import {
   ActiveImg,
   BackgroundImg,
   BackRightCon,
+  BlogCon,
+  BlogFirstCon,
+  BlogHealth,
+  BlogHealth2,
+  BlogRightCon,
+  BlogRightCon2,
+  BlogRightCon3,
   ButtonsCon,
   CarouselItem,
   Con,
@@ -9,6 +16,7 @@ import {
   DownloadMini,
   EasyCon,
   GreenBtn,
+  HealthMini,
   HoneyPro,
   MainCon,
   ModalCon,
@@ -67,6 +75,14 @@ import man2 from "..//assets/man2.jpg";
 import man3 from "..//assets/man3.jpg";
 import man4 from "..//assets/man4.jpg";
 import man5 from "..//assets/man5.jpg";
+import blog1 from "../assets/blog1.jpg";
+import calendar from "../assets/calendar.svg";
+import eye from "../assets/eye.svg";
+import comment from "../assets/comment.svg";
+import arrow from "../assets/Right Arrow.svg";
+import blog2 from "../assets/blog2.jpg";
+import blog3 from "../assets/blog3.jpg";
+import blog4 from "../assets/blog4.jpg";
 
 const MainPage = () => {
   var settings = {
@@ -673,6 +689,202 @@ const MainPage = () => {
         </Carousel>
         ;
       </Testimonial>
+      <BlogCon>
+        <div style={{ marginBottom: "300px" }}>
+          <div className="BlogFirst">
+            <h4>Blog & News</h4>
+            <img src={frame} alt="frame" />
+          </div>
+          <h2>Interesting Articles Updated Daily </h2>
+          <BlogFirstCon>
+            <div>
+              <img src={blog1} alt="blog1-img" className="blog1" />
+              <BlogHealth>
+                <p>Health</p>
+                <HealthMini>
+                  <h2>
+                    <img src={calendar} alt="calendar-img" />
+                    October 10, 2022
+                  </h2>
+                </HealthMini>
+                <HealthMini>
+                  <h2>
+                    <img src={eye} alt="eye-img" />
+                    74,00
+                  </h2>
+                </HealthMini>
+                <HealthMini>
+                  <h2>
+                    <img src={comment} alt="comment-img" />
+                    10
+                  </h2>
+                </HealthMini>
+              </BlogHealth>
+              <p className="OurBookkeepers">
+                Our Beekeepers Begin to Collect <br />
+                Honey...
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  marginTop: "24px",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div className="ImgCon">
+                  <img src={man2} alt="man-img" />
+                  <p>Leslie Alexander</p>
+                </div>
+                <div className="ReadMore">
+                  <p>Read more</p>
+                  <img src={arrow} alt="right-arrow-img" />
+                </div>
+              </div>
+            </div>
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "30px" }}
+            >
+              <BlogRightCon>
+                <div>
+                  <BlogHealth2>
+                    <p>About Honey</p>
+                    <HealthMini>
+                      <h2>
+                        <img src={calendar} alt="calendar-img" />
+                        November 10, 2022
+                      </h2>
+                    </HealthMini>
+                    <HealthMini>
+                      <h2>
+                        <img src={eye} alt="eye-img" />
+                        58,00
+                      </h2>
+                    </HealthMini>
+                    <HealthMini>
+                      <h2>
+                        <img src={comment} alt="comment-img" />8
+                      </h2>
+                    </HealthMini>
+                  </BlogHealth2>
+                  <p className="OurBookkeepers">
+                    Raw Honey VS Commercial <br />
+                    Honey What You Need...
+                  </p>
+                  <div
+                    style={{
+                      display: "flex",
+                      marginTop: "24px",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div className="ImgCon">
+                      <img src={man3} alt="man-img" />
+                      <p>Ronald Richards</p>
+                    </div>
+                    <div className="ReadMore">
+                      <p>Read more</p>
+                      <img src={arrow} alt="right-arrow-img" />
+                    </div>
+                  </div>
+                </div>
+                <img src={blog2} alt="blog2" className="BlogImg" />
+              </BlogRightCon>
+              <BlogRightCon2>
+                <div>
+                  <BlogHealth>
+                    <p>Bee</p>
+                    <HealthMini>
+                      <h2>
+                        <img src={calendar} alt="calendar-img" />
+                        October 22, 2022
+                      </h2>
+                    </HealthMini>
+                    <HealthMini>
+                      <h2>
+                        <img src={eye} alt="eye-img" />
+                        60,00
+                      </h2>
+                    </HealthMini>
+                    <HealthMini>
+                      <h2>
+                        <img src={comment} alt="comment-img" />
+                        10
+                      </h2>
+                    </HealthMini>
+                  </BlogHealth>
+                  <p className="OurBookkeepers">
+                    5 Ways To Attract Bees To Your <br />
+                    Garden...
+                  </p>
+                  <div
+                    style={{
+                      display: "flex",
+                      marginTop: "24px",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div className="ImgCon">
+                      <img src={man5} alt="man-img" />
+                      <p>Guy Hawkins</p>
+                    </div>
+                    <div className="ReadMore">
+                      <p>Read more</p>
+                      <img src={arrow} alt="right-arrow-img" />
+                    </div>
+                  </div>
+                </div>
+                <img src={blog3} alt="blog3" className="BlogImg" />
+              </BlogRightCon2>
+              <BlogRightCon3>
+                <div>
+                  <BlogHealth>
+                    <p>Health</p>
+                    <HealthMini>
+                      <h2>
+                        <img src={calendar} alt="calendar-img" />
+                        November 25, 2022
+                      </h2>
+                    </HealthMini>
+                    <HealthMini>
+                      <h2>
+                        <img src={eye} alt="eye-img" />
+                        80,00
+                      </h2>
+                    </HealthMini>
+                    <HealthMini>
+                      <h2>
+                        <img src={comment} alt="comment-img" />
+                        10
+                      </h2>
+                    </HealthMini>
+                  </BlogHealth>
+                  <p className="OurBookkeepers">
+                    Why Honey is Necessary for <br />
+                    Glowing Skin?
+                  </p>
+                  <div
+                    style={{
+                      display: "flex",
+                      marginTop: "24px",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div className="ImgCon">
+                      <img src={man4} alt="man-img" />
+                      <p>Darlene Robertson</p>
+                    </div>
+                    <div className="ReadMore">
+                      <p>Read more</p>
+                      <img src={arrow} alt="right-arrow-img" />
+                    </div>
+                  </div>
+                </div>
+                <img src={blog4} alt="blog4" className="BlogImg" />
+              </BlogRightCon3>
+            </div>
+          </BlogFirstCon>
+        </div>
+      </BlogCon>
     </MainCon>
   );
 };

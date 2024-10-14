@@ -1,5 +1,9 @@
-const MainPage = () => {
-  return <div></div>;
+const Home = () => {
+  return (
+    <div>
+      <div style={{ height: "1000px" }}> Home</div>
+    </div>
+  );
 };
 
-export default MainPage;
+export default Home;

@@ -17,12 +17,9 @@ export const NavbarCon = styled.div`
   gap: 200px;
   background: var(--Black-separate, #201a18);
   z-index: 5;
-  border: 4px solid red;
 `;
 
-export const NavFirstMainCon = styled.div`
-  border: 4px solid red;
-`;
+export const NavFirstMainCon = styled.div``;
 
 export const NavFirstCon = styled.div`
   display: flex;
@@ -50,7 +47,7 @@ export const MenuCon = styled.div`
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  border: 4px solid red;
+
   p {
     color: #201a18;
     font-size: 14px;
@@ -87,7 +84,6 @@ export const IconCon = styled.div`
   gap: 20px;
   justify-content: center;
   align-items: center;
-  border: 4px solid red;
 
   p {
     color: #201a18;
@@ -122,7 +118,6 @@ export const BackgroundImg = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 115px;
-  border: 4px solid red;
 
   h1 {
     color: #fff;
@@ -162,7 +157,6 @@ export const BackRightCon = styled.div`
   display: flex;
   margin-top: -120px;
   z-index: 0;
-  border: 4px solid red;
 
   img {
     width: 100%;
@@ -785,5 +779,411 @@ export const CarouselItem = styled.div`
     line-height: 29px;
     margin-top: 10px;
     width: 400px;
+  }
+`;
+
+// Blog Section
+
+export const BlogCon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f9f6f2;
+  width: 1520px;
+
+  h4 {
+    color: var(--pragrap, #50413c);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 10px;
+    margin-top: 120px;
+  }
+  h2 {
+    color: var(--Black, #2b221f);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    margin-top: 30px;
+  }
+  .BlogFirst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+export const BlogFirstCon = styled.div`
+  margin-top: 60px;
+  display: flex;
+  gap: 70px;
+  cursor: pointer;
+
+  .blog1 {
+    width: 520px;
+    height: 510px;
+    flex-shrink: 0;
+    border-radius: 20px;
+  }
+  .OurBookkeepers {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px;
+    margin-top: 30px;
+  }
+  .ImgCon {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      border-radius: 50%;
+    }
+    p {
+      color: var(--pragrap, #50413c);
+      font-family: "Arima";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 29px;
+    }
+  }
+  .ReadMore {
+    display: flex;
+    gap: 10px;
+    p {
+      color: var(--pragrap, #50413c);
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+      letter-spacing: 0.63px;
+      text-transform: uppercase;
+    }
+  }
+`;
+
+export const BlogHealth = styled.div`
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  p {
+    color: var(--pragrap, #50413c);
+    font-family: "Arima";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    border-radius: 3px;
+    border: 1px solid rgba(43, 34, 31, 0.1);
+    padding: 3px 13px;
+    display: flex;
+    flex-shrink: 0;
+    height: auto;
+    padding: 0 10px;
+  }
+
+  h2 {
+    color: var(--pragrap, #50413c);
+    font-family: "Arima";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+  }
+`;
+
+export const BlogHealth2 = styled.div`
+  display: flex;
+  gap: 30px;
+  p {
+    color: var(--pragrap, #50413c);
+    font-family: "Arima";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    border-radius: 3px;
+    border: 1px solid rgba(43, 34, 31, 0.1);
+    padding: 3px 13px;
+    display: flex;
+    flex-shrink: 0;
+    height: auto;
+    padding: 0 10px;
+  }
+
+  h2 {
+    color: var(--pragrap, #50413c);
+    font-family: "Arima";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+  }
+`;
+
+export const HealthMini = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 0;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+`;
+
+export const BlogRightCon = styled.div`
+  display: flex;
+  gap: 90px;
+  justify-content: center;
+  align-items: center;
+
+  .BlogImg {
+    width: 250px;
+    height: 176px;
+    flex-shrink: 0;
+    border-radius: 20px;
+  }
+`;
+
+export const BlogRightCon2 = styled.div`
+  display: flex;
+  border-top: 1px solid rgba(43, 34, 31, 0.1);
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+
+  .BlogImg {
+    width: 250px;
+    height: 176px;
+    flex-shrink: 0;
+    border-radius: 20px;
+  }
+`;
+
+export const BlogRightCon3 = styled.div`
+  display: flex;
+  border-top: 1px solid rgba(43, 34, 31, 0.1);
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+
+  .BlogImg {
+    width: 250px;
+    height: 176px;
+    flex-shrink: 0;
+    border-radius: 20px;
+  }
+`;
+
+// Footer Section Styles
+
+export const MainFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 668px;
+  flex-shrink: 0;
+  background: var(--Black, #2b221f);
+`;
+
+export const FooterYellow = styled.div`
+  display: flex;
+  width: 1290px;
+  height: 305px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--yellow, #fcc41a);
+  margin-top: -340px;
+  padding: 90px;
+  gap: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
+export const NewsLetterLeft = styled.div`
+  p {
+    color: var(--pragrap, #50413c);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+    display: flex;
+  }
+
+  h3 {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    margin-top: 10px;
+  }
+`;
+export const NewsLetterRight = styled.div`
+  display: flex;
+  gap: 15px;
+  input {
+    width: 368px;
+    height: 60px;
+    flex-shrink: 0;
+    padding: 20px;
+    color: var(--pragrap, #50413c);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    border-radius: 5px;
+    border: none;
+  }
+`;
+export const BottomFooter = styled.div`
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 120px;
+`;
+export const Beeberry = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  p {
+    color: #fff;
+    font-family: "Arima";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 55px;
+  }
+  h3 {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+  }
+  .FollowUs {
+    display: flex;
+    gap: 20px;
+    h4 {
+      color: #fff;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 29px;
+    }
+    img {
+      cursor: pointer;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+`;
+export const UsefulLinks = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  p {
+    color: #fff;
+    font-family: "Arima";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+  }
+  li {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    list-style-type: none;
+  }
+  ul li::before {
+    content: "•";
+    color: #fcc41a;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+`;
+export const ContactUs = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h2 {
+    color: #fff;
+    font-family: "Arima";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+  }
+
+  p {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+  }
+  h3 {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    &:hover {
+      background-color: none !important;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
   }
 `;

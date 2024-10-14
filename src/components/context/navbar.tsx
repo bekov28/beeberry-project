@@ -31,23 +31,30 @@ const Navbar = () => {
             </p>
           </div>
         </NavLink>
-
-        <div className="Align">
-          <p className="whiteP">
-            Pages <img src={arrow} alt="arrow" />{" "}
-          </p>
-        </div>
-        <div className="Align">
-          <p className="whiteP">About us</p>
-        </div>
-        <div className="Align">
-          <p className="whiteP">
-            Gallery <img src={arrow} alt="arrow" />
-          </p>
-        </div>
-        <div className="Align">
-          <p className="whiteP">Contact</p>
-        </div>
+        <NavLink to={"/pages"}>
+          <div className="Align">
+            <p className="whiteP">
+              Pages <img src={arrow} alt="arrow" />
+            </p>
+          </div>
+        </NavLink>
+        <NavLink to={"/about"}>
+          <div className="Align">
+            <p className="whiteP">About us</p>
+          </div>
+        </NavLink>
+        <NavLink to={"gallery"}>
+          <div className="Align">
+            <p className="whiteP">
+              Gallery <img src={arrow} alt="arrow" />
+            </p>
+          </div>
+        </NavLink>
+        <NavLink to={"contact"}>
+          <div className="Align">
+            <p className="whiteP">Contact</p>
+          </div>
+        </NavLink>
       </MenuCon>
       <IconCon>
         <img src={searchHome} alt="searchHome-img" />
