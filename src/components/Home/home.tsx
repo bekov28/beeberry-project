@@ -1,7 +1,9 @@
+import { DeliciousCon } from "../styles/style";
+
 const Home = () => {
   return (
-    <div>
-      <div style={{ height: "1000px" }}> Home</div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <DeliciousCon></DeliciousCon>
     </div>
   );
 };

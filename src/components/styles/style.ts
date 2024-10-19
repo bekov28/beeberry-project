@@ -7,6 +7,8 @@ export const MainCon = styled.div`
   align-items: center;
 `;
 
+// Navbar
+
 export const NavbarCon = styled.div`
   height: 120px;
   flex-shrink: 0;
@@ -118,7 +120,7 @@ export const BackgroundImg = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 115px;
-
+  margin-right: -100px;
   h1 {
     color: #fff;
     font-family: "Arima", sans-serif;
@@ -148,21 +150,16 @@ export const ActiveImg = styled.img`
   }
 `;
 
-export const BackRightCon = styled.div`
-  width: 780px;
-  height: 600px;
-  overflow: hidden;
+export const BackRightCon = styled.img`
+  width: 1100px;
+  height: 900px;
   flex-shrink: 0;
-  margin-left: -80px;
+  margin-left: -100px;
   display: flex;
-  margin-top: -120px;
+  margin-top: -300px;
   z-index: 0;
-
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+  border-radius: 50%;
+  clip-path: inset(240px 200px 0 0);
 `;
 
 export const ModalCon = styled.div`
@@ -266,6 +263,9 @@ export const YellowBtn = styled.button`
     transform: scale(0.98);
   }
 `;
+
+// Our Services
+
 export const OurServices = styled.div`
   display: flex;
   flex-direction: column;
@@ -831,6 +831,13 @@ export const BlogFirstCon = styled.div`
     height: 510px;
     flex-shrink: 0;
     border-radius: 20px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      transform: scale(0.99);
+    }
   }
   .OurBookkeepers {
     color: var(--Black, #2b221f);
@@ -962,6 +969,13 @@ export const BlogRightCon = styled.div`
     height: 176px;
     flex-shrink: 0;
     border-radius: 20px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
   }
 `;
 
@@ -977,6 +991,13 @@ export const BlogRightCon2 = styled.div`
     height: 176px;
     flex-shrink: 0;
     border-radius: 20px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
   }
 `;
 
@@ -992,6 +1013,13 @@ export const BlogRightCon3 = styled.div`
     height: 176px;
     flex-shrink: 0;
     border-radius: 20px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
   }
 `;
 
@@ -1186,4 +1214,54 @@ export const ContactUs = styled.div`
       transform: scale(0.98);
     }
   }
+`;
+export const InstagramCon = styled.div`
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h2 {
+    color: #fff;
+    font-family: "Arima";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+  }
+  img {
+    width: 85.625px;
+    height: 85.625px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+`;
+export const InstaMini = styled.div`
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .instaLogo {
+    width: 35px;
+    height: 40px;
+    z-index: 1;
+    margin-left: -60px;
+  }
+`;
+
+// HomePage Styles
+
+export const DeliciousCon = styled.div`
+  width: 1922px;
+  height: 1832px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--yellow, #fcc41a);
 `;

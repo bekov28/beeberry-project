@@ -5,6 +5,8 @@ import {
   ContactUs,
   FooterYellow,
   GreenBtn,
+  InstagramCon,
+  InstaMini,
   MainFooter,
   NewsLetterLeft,
   NewsLetterRight,
@@ -18,6 +20,14 @@ import instagram from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
 import phone from "../assets/phone-call.svg";
 import email from "../assets/email.svg";
+import { NavLink } from "react-router-dom";
+import honey1 from "../assets/footerInstaassets/honey1.png";
+import honey2 from "../assets/footerInstaassets/honey2.jpg";
+import honey3 from "../assets/footerInstaassets/honey3.jpg";
+import honey4 from "../assets/footerInstaassets/honey4.jpg";
+import honey5 from "../assets/footerInstaassets/honey5.jpg";
+import honey6 from "../assets/footerInstaassets/honey6.jpg";
+import instafooter from "../assets/footerInstaassets/insta_footer.svg";
 
 const Footer = () => {
   return (
@@ -49,10 +59,14 @@ const Footer = () => {
                 gap: "10px",
               }}
             >
-              <div style={{ display: "flex", gap: "10px", cursor: "pointer" }}>
-                <img src={logo} alt="logo" />
-                <p>Beeberry</p>
-              </div>
+              <NavLink to={"/"}>
+                <div
+                  style={{ display: "flex", gap: "10px", cursor: "pointer" }}
+                >
+                  <img src={logo} alt="logo" />
+                  <p>Beeberry</p>
+                </div>
+              </NavLink>
             </div>
             <div style={{ width: "241px" }}>
               <h3>
@@ -114,7 +128,30 @@ const Footer = () => {
               </div>
             </div>
           </ContactUs>
-          <div></div>
+          <InstagramCon>
+            <h2>Instagram</h2>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                gap: "8px",
+              }}
+            >
+              <InstaMini>
+                <img
+                  src={honey1}
+                  alt="honey1"
+                  style={{ opacity: "0.3"}}
+                />
+                <img src={instafooter} alt="insta" className="instaLogo" />
+              </InstaMini>
+              <img src={honey2} alt="honey2" />
+              <img src={honey3} alt="honey3" />
+              <img src={honey4} alt="honey4" />
+              <img src={honey5} alt="honey5" />
+              <img src={honey6} alt="honey6" />
+            </div>
+          </InstagramCon>
         </BottomFooter>
       </MainFooter>
     </div>

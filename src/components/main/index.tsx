@@ -175,9 +175,9 @@ const MainPage = () => {
             <ActiveImg src={arrowDown} alt="arrow-img" />
           </div>
         </BackgroundImg>
-        <BackRightCon>
-          <img src={honey} alt="honey" />
-        </BackRightCon>
+        <div style={{ width: "800px" }}>
+          <BackRightCon src={honey} alt="honey" />
+        </div>
       </div>
       <ModalCon>
         <AppModal />
