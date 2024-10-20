@@ -1258,10 +1258,66 @@ export const InstaMini = styled.div`
 
 // HomePage Styles
 
+export const MainHome = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2000px;
+
+  .ActiveImg {
+    margin-top: -70px;
+    z-index: 3;
+  }
+
+  .Slider img {
+    width: 63px;
+    height: 75px;
+    flex-shrink: 0;
+  }
+  .Slider {
+    width: 100%;
+    max-width: 1100px;
+  }
+`;
+
 export const DeliciousCon = styled.div`
-  width: 1922px;
-  height: 1832px;
+  width: 1620px;
+  height: 1432px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: var(--yellow, #fcc41a);
+  background-color: #fcc41a;
+  clip-path: inset(970px 0 0 0);
+  margin-top: -2165px;
+
+  h2 {
+    z-index: 1;
+    margin-top: 1020px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 100px;
+  }
+  .DelCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--Black, #2b221f);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 75px;
+  }
+`;
+export const BeeKeeper = styled.img`
+  width: 650px;
+  height: 250px;
+  flex-shrink: 0;
+  border-radius: 236px;
+  margin-top: -150px;
+  z-index: 1;
 `;
