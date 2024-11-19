@@ -12,6 +12,14 @@ import beeKeeper from "../assets/HomePageAssets/beekeeper.jpg";
 import arrowDown from "../assets/Arrow down.svg";
 import Slider from "react-slick";
 import frame from "../assets/Frame.svg";
+import partner1 from "../assets/HomePageAssets/PartnersImgs/partner1.png";
+import partner2 from "../assets/HomePageAssets/PartnersImgs/partner2.png";
+import partner3 from "../assets/HomePageAssets/PartnersImgs/partner3.png";
+import partner4 from "../assets/HomePageAssets/PartnersImgs/partner4.png";
+import partner5 from "../assets/HomePageAssets/PartnersImgs/partner5.png";
+import partner6 from "../assets/HomePageAssets/PartnersImgs/partner6.png";
+import partner7 from "../assets/HomePageAssets/PartnersImgs/partner7.png";
+import partner8 from "../assets/HomePageAssets/PartnersImgs/partner8.png";
 
 const Home = () => {
   var settings = {
@@ -83,14 +91,14 @@ const Home = () => {
       </div>
       <SliderCon className="Slider">
         <Slider {...settings}>
-          <img about="" />
-          <img about="" />
-          <img about="" />
-          <img about="" />
-          <img about="" />
-          <img about="" />
-          <img about="" />
-          <img about="" />
+          <img src={partner1} alt="partner1" className="partner" />
+          <img src={partner2} alt="partner2" className="partner" />
+          <img src={partner3} alt="partner3" className="partner" />
+          <img src={partner4} alt="partner4" className="partner" />
+          <img src={partner5} alt="partner5" className="partner" />
+          <img src={partner6} alt="partner6" className="partner" />
+          <img src={partner7} alt="partner7" className="partner" />
+          <img src={partner8} alt="partner8" className="partner" />
         </Slider>
       </SliderCon>
     </MainHome>

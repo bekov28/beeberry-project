@@ -1278,6 +1278,12 @@ export const MainHome = styled.div`
   .Slider {
     width: 100%;
     max-width: 1100px;
+    cursor: pointer;
+  }
+  .partner {
+    &:active {
+      transform: scale(0.95);
+    }
   }
 `;
 
@@ -1288,7 +1294,7 @@ export const DeliciousCon = styled.div`
   border-radius: 50%;
   background-color: #fcc41a;
   clip-path: inset(970px 0 0 0);
-  margin-top: -2165px;
+  margin-top: -2155px;
 
   h2 {
     z-index: 1;
