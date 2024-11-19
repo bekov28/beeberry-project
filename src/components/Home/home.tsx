@@ -3,6 +3,7 @@ import {
   BeeKeeper,
   DeliciousCon,
   GreenBtn,
+  HomeOurServices,
   MainHome,
   SliderCon,
 } from "../styles/style";
@@ -70,7 +71,7 @@ const Home = () => {
             Delicious & Unlimited Online <br /> Honey Delivery
             <GreenBtn className="More">Click and buy</GreenBtn>
           </div>
-          <img src={bee2} alt="bee1" />
+          <img src={bee2} alt="bee1"/>
         </h2>
       </DeliciousCon>
       <BeeKeeper src={beeKeeper} alt="beekeeper-img" />
@@ -88,19 +89,24 @@ const Home = () => {
       >
         <h4>Our Sweet Clients and Partners</h4>
         <img src={frame} alt="frame" />
+
+        <SliderCon className="Slider">
+          <Slider {...settings}>
+            <img src={partner1} alt="partner1" className="partner" />
+            <img src={partner2} alt="partner2" className="partner" />
+            <img src={partner3} alt="partner3" className="partner" />
+            <img src={partner4} alt="partner4" className="partner" />
+            <img src={partner5} alt="partner5" className="partner" />
+            <img src={partner6} alt="partner6" className="partner" />
+            <img src={partner7} alt="partner7" className="partner" />
+            <img src={partner8} alt="partner8" className="partner" />
+          </Slider>
+        </SliderCon>
       </div>
-      <SliderCon className="Slider">
-        <Slider {...settings}>
-          <img src={partner1} alt="partner1" className="partner" />
-          <img src={partner2} alt="partner2" className="partner" />
-          <img src={partner3} alt="partner3" className="partner" />
-          <img src={partner4} alt="partner4" className="partner" />
-          <img src={partner5} alt="partner5" className="partner" />
-          <img src={partner6} alt="partner6" className="partner" />
-          <img src={partner7} alt="partner7" className="partner" />
-          <img src={partner8} alt="partner8" className="partner" />
-        </Slider>
-      </SliderCon>
+      <HomeOurServices>
+        <h4>Our Services</h4>
+        <img src={frame} alt="frame" />
+      </HomeOurServices>
     </MainHome>
   );
 };

@@ -1264,6 +1264,7 @@ export const MainHome = styled.div`
   justify-content: center;
   align-items: center;
   height: 2000px;
+  overflow: hidden;
 
   .ActiveImg {
     margin-top: -70px;
@@ -1288,13 +1289,13 @@ export const MainHome = styled.div`
 `;
 
 export const DeliciousCon = styled.div`
-  width: 1620px;
+  width: 1622px;
   height: 1432px;
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #fcc41a;
-  clip-path: inset(970px 0 0 0);
-  margin-top: -2155px;
+  clip-path: inset(60% 0 0 0);
+  margin-top: -1770px;
 
   h2 {
     z-index: 1;
@@ -1317,13 +1318,23 @@ export const DeliciousCon = styled.div`
     font-style: normal;
     font-weight: 900;
     line-height: 75px;
+    margin-top: 40px;
   }
 `;
+
 export const BeeKeeper = styled.img`
   width: 650px;
   height: 250px;
   flex-shrink: 0;
   border-radius: 236px;
-  margin-top: -150px;
+  margin-top: -100px;
   z-index: 1;
+`;
+
+export const HomeOurServices = styled.div`
+  width: 1100px;
+  flex-shrink: 0;
+  background: #f9f6f2;
+  margin-top: 70px;
+  padding: 70px 120px;
 `;
