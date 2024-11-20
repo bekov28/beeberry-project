@@ -58,11 +58,15 @@ export const MenuCon = styled.div`
     line-height: normal;
     letter-spacing: 1.19px;
     text-transform: uppercase;
-    width: 80px;
+    width: 90px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      background-color: #fcc41a;
+      border-radius: 7px;
+    }
   }
   .Align {
     display: flex;
@@ -240,6 +244,9 @@ export const GreenBtn = styled.button`
     text-transform: uppercase;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   }
+  &:hover {
+    background-color: darkgreen;
+  }
 `;
 
 export const YellowBtn = styled.button`
@@ -261,6 +268,9 @@ export const YellowBtn = styled.button`
 
   &:active {
     transform: scale(0.98);
+  }
+  &:hover {
+    background-color: orange;
   }
 `;
 
@@ -321,8 +331,9 @@ export const HoneyPro = styled.div`
     margin-top: 50px;
   }
 
-  &:active {
-    transform: scale(0.98);
+  &:hover {
+    transform: scale(1.03);
+    background-color: #f8f8ff;
   }
 `;
 
@@ -1264,7 +1275,6 @@ export const MainHome = styled.div`
   justify-content: center;
   align-items: center;
   height: 2000px;
-  overflow: hidden;
 
   .ActiveImg {
     margin-top: -70px;
@@ -1294,8 +1304,9 @@ export const DeliciousCon = styled.div`
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #fcc41a;
-  clip-path: inset(60% 0 0 0);
-  margin-top: -1770px;
+  background-clip: padding-box;
+  clip-path: inset(65% 0 0 0);
+  margin-top: -1360px;
 
   h2 {
     z-index: 1;
@@ -1319,6 +1330,10 @@ export const DeliciousCon = styled.div`
     font-weight: 900;
     line-height: 75px;
     margin-top: 40px;
+
+    .More {
+      margin-top: 20px;
+    }
   }
 `;
 
@@ -1337,4 +1352,64 @@ export const HomeOurServices = styled.div`
   background: #f9f6f2;
   margin-top: 70px;
   padding: 70px 120px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const OurServicesMain = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 30px;
+`;
+
+export const OurServicesLeft = styled.div`
+  h2 {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+  }
+  h4 {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    cursor: pointer;
+    &:hover {
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+  .More {
+    margin-top: 50px;
+  }
+`;
+
+export const OurServicesRight = styled.div`
+  img {
+    width: 400px;
+    height: 380px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    z-index: 1;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+  .EmptyCon {
+    width: 400px;
+    height: 380px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--yellow, #fcc41a);
+    z-index: 0;
+    margin-top: -370px;
+    margin-left: 20px;
+  }
 `;

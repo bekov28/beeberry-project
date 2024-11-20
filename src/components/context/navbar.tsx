@@ -40,19 +40,23 @@ const Navbar = () => {
         </NavLink>
         <NavLink to={"/about"}>
           <div className="Align">
-            <p className="whiteP">About us</p>
+            <p className="whiteP" style={{ padding: "3px 0px" }}>
+              About us
+            </p>
           </div>
         </NavLink>
         <NavLink to={"gallery"}>
           <div className="Align">
             <p className="whiteP">
-              Gallery <img src={arrow} alt="arrow" />
+              Gallery <img src={arrow} alt="arrow"/>
             </p>
           </div>
         </NavLink>
         <NavLink to={"contact"}>
           <div className="Align">
-            <p className="whiteP">Contact</p>
+            <p className="whiteP" style={{ padding: "3px 0px" }}>
+              Contact
+            </p>
           </div>
         </NavLink>
       </MenuCon>

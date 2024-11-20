@@ -5,6 +5,10 @@ import {
   GreenBtn,
   HomeOurServices,
   MainHome,
+  OurServices,
+  OurServicesLeft,
+  OurServicesMain,
+  OurServicesRight,
   SliderCon,
 } from "../styles/style";
 import bee1 from "../assets/HomePageAssets/bee1.svg";
@@ -21,7 +25,7 @@ import partner5 from "../assets/HomePageAssets/PartnersImgs/partner5.png";
 import partner6 from "../assets/HomePageAssets/PartnersImgs/partner6.png";
 import partner7 from "../assets/HomePageAssets/PartnersImgs/partner7.png";
 import partner8 from "../assets/HomePageAssets/PartnersImgs/partner8.png";
-
+import honeyService from "../assets/HomePageAssets/honeyService.jpg";
 const Home = () => {
   var settings = {
     dots: false,
@@ -71,7 +75,7 @@ const Home = () => {
             Delicious & Unlimited Online <br /> Honey Delivery
             <GreenBtn className="More">Click and buy</GreenBtn>
           </div>
-          <img src={bee2} alt="bee1"/>
+          <img src={bee2} alt="bee1" />
         </h2>
       </DeliciousCon>
       <BeeKeeper src={beeKeeper} alt="beekeeper-img" />
@@ -104,8 +108,35 @@ const Home = () => {
         </SliderCon>
       </div>
       <HomeOurServices>
-        <h4>Our Services</h4>
-        <img src={frame} alt="frame" />
+        <div className="our-services">
+          <h6 style={{ marginLeft: "10px" }}>Our Services</h6>
+          <img src={frame} alt="frame" />
+        </div>
+        <OurServicesMain>
+          <OurServicesLeft>
+            <h2>
+              Check Our Range of <br></br>Services
+            </h2>
+            <div
+              style={{
+                marginTop: "30px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+              }}
+            >
+              <h4>Honey Production</h4>
+              <h4>Beekeeping Classes</h4>
+              <h4>Swarm Removal</h4>
+              <h4>Honey Shop</h4>
+            </div>
+            <GreenBtn className="More">More services</GreenBtn>
+          </OurServicesLeft>
+          <OurServicesRight>
+            <img src={honeyService} alt="honey_service" />
+            <div className="EmptyCon"></div>
+          </OurServicesRight>
+        </OurServicesMain>
       </HomeOurServices>
     </MainHome>
   );
