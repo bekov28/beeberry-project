@@ -1,4 +1,8 @@
 import {
+  AboutCon,
+  AboutConLeft,
+  AboutConModal,
+  AboutConRight,
   ActiveImg,
   BeeKeeper,
   DeliciousCon,
@@ -10,6 +14,7 @@ import {
   OurServicesMain,
   OurServicesRight,
   SliderCon,
+  TwentySeven,
 } from "../styles/style";
 import bee1 from "../assets/HomePageAssets/bee1.svg";
 import bee2 from "../assets/HomePageAssets/bee2.svg";
@@ -26,6 +31,7 @@ import partner6 from "../assets/HomePageAssets/PartnersImgs/partner6.png";
 import partner7 from "../assets/HomePageAssets/PartnersImgs/partner7.png";
 import partner8 from "../assets/HomePageAssets/PartnersImgs/partner8.png";
 import honeyService from "../assets/HomePageAssets/honeyService.jpg";
+import HomeModal from "./modal";
 const Home = () => {
   var settings = {
     dots: false,
@@ -138,6 +144,44 @@ const Home = () => {
           </OurServicesRight>
         </OurServicesMain>
       </HomeOurServices>
+      <AboutCon>
+        <div style={{ padding: "0px 90px" }}>
+          <h6>About Beeberry</h6>
+          <img src={frame} alt="frame" />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-evenly",
+            gap: "70px",
+            marginTop: "20px",
+          }}
+        >
+          <AboutConLeft>
+            <h2>
+              Unique and Health <br />
+              Benefits of Honey
+            </h2>
+            <TwentySeven>
+              <h3>27+</h3>
+              <p></p>
+              <h6>Years of Experience</h6>
+            </TwentySeven>
+          </AboutConLeft>
+          <AboutConRight>
+            <p>
+              For over 27 years, our family has been keeping bees around
+              Beechworth <br /> producing pure and natural Australian honey.
+              Traditions, techniques, and <br /> tales are now being passed from
+              the 4th to the 5th generation.
+            </p>
+            <GreenBtn className="LearnMore">Learn more </GreenBtn>
+          </AboutConRight>
+        </div>
+        <AboutConModal>
+          <HomeModal/>
+        </AboutConModal>
+      </AboutCon>
     </MainHome>
   );
 };

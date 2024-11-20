@@ -83,18 +83,24 @@ import arrow from "../assets/Right Arrow.svg";
 import blog2 from "../assets/blog2.jpg";
 import blog3 from "../assets/blog3.jpg";
 import blog4 from "../assets/blog4.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const MainPage = () => {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
+    cssEase: "ease-in-out",
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 1500,
     vertical: false,
     arrows: true,
     centerMode: true,
     centerPadding: "15px",
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1250,

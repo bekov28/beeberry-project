@@ -1099,6 +1099,11 @@ export const NewsLetterRight = styled.div`
     line-height: 29px;
     border-radius: 5px;
     border: none;
+
+    &:focus {
+      background-color: #f0f8ff;
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    }
   }
 `;
 export const BottomFooter = styled.div`
@@ -1274,7 +1279,7 @@ export const MainHome = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 2000px;
+  overflow: hidden;
 
   .ActiveImg {
     margin-top: -70px;
@@ -1306,7 +1311,7 @@ export const DeliciousCon = styled.div`
   background-color: #fcc41a;
   background-clip: padding-box;
   clip-path: inset(65% 0 0 0);
-  margin-top: -1360px;
+  margin-top: -1200px;
 
   h2 {
     z-index: 1;
@@ -1413,3 +1418,77 @@ export const OurServicesRight = styled.div`
     margin-left: 20px;
   }
 `;
+
+export const AboutCon = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  width: 1100px;
+`;
+export const AboutConLeft = styled.div`
+  h2 {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+  }
+`;
+
+export const TwentySeven = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  p {
+    width: 52px;
+    height: 2px;
+    flex-shrink: 0;
+    background: var(--Black, #2b221f);
+  }
+  h3 {
+    width: 98px;
+    height: 48px;
+    flex-shrink: 0;
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+  }
+  h6 {
+    color: var(--pragrap, #50413c);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+  }
+`;
+export const AboutConRight = styled.div`
+  p {
+    display: flex;
+    width: 511px;
+    height: 72px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--pragrap, #50413c);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    &::selection {
+      background: yellow;
+      color: black;
+    }
+  }
+  .LearnMore {
+    margin-top: 20px;
+  }
+`;
+export const AboutConModal =styled.div``;
