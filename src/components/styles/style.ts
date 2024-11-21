@@ -1045,6 +1045,7 @@ export const MainFooter = styled.div`
   height: 668px;
   flex-shrink: 0;
   background: var(--Black, #2b221f);
+  margin-top: 50px;
 `;
 
 export const FooterYellow = styled.div`
@@ -1304,22 +1305,21 @@ export const MainHome = styled.div`
 `;
 
 export const DeliciousCon = styled.div`
-  width: 1622px;
-  height: 1432px;
+  width: 1520px;
+  height: 760px;
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #fcc41a;
   background-clip: padding-box;
-  clip-path: inset(65% 0 0 0);
-  margin-top: -1200px;
+  margin-top: -350px;
 
   h2 {
     z-index: 1;
-    margin-top: 1020px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 0 100px;
+    margin-top: 350px;
   }
   .DelCon {
     display: flex;
@@ -1491,4 +1491,116 @@ export const AboutConRight = styled.div`
     margin-top: 20px;
   }
 `;
-export const AboutConModal =styled.div``;
+export const AboutConModal = styled.div`
+  margin-bottom: 40px;
+`;
+
+export const MillBeehive = styled.div`
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-around;
+
+  h2 {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+  }
+  h4 {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+      border-radius: 20px;
+    }
+  }
+`;
+export const GalleryCon = styled.div`
+  margin-top: 50px;
+  margin-bottom: 200px;
+`;
+export const GalleryTextCon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-top: 10px;
+    color: var(--Black, #2b221f);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+  }
+  h4 {
+    color: var(--pragrap, #50413c);
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+  }
+`;
+export const ImageGallery = styled.div`
+  margin-top: 30px;
+  cursor: pointer;
+  img:hover {
+    transform: scale(1.02);
+    z-index: 2;
+  }
+
+  .honey2,
+  .honey4 {
+    width: 540px;
+    height: 439px;
+    flex-shrink: 0;
+    border-radius: 20px;
+  }
+  .honey1,
+  .honey3 {
+    width: 320px;
+    height: 439px;
+    flex-shrink: 0;
+    border-radius: 20px;
+  }
+`;
+export const Honeybe = styled.div`
+  z-index: 3;
+  margin-top: -80px;
+  position: relative;
+  padding-left: 20px;
+  img {
+    width: 120px;
+    height: 20px;
+  }
+  h3 {
+    color: #fff;
+    font-family: "Arima";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+  }
+`;

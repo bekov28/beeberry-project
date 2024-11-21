@@ -6,9 +6,14 @@ import {
   ActiveImg,
   BeeKeeper,
   DeliciousCon,
+  GalleryCon,
+  GalleryTextCon,
   GreenBtn,
   HomeOurServices,
+  Honeybe,
+  ImageGallery,
   MainHome,
+  MillBeehive,
   OurServices,
   OurServicesLeft,
   OurServicesMain,
@@ -32,6 +37,15 @@ import partner7 from "../assets/HomePageAssets/PartnersImgs/partner7.png";
 import partner8 from "../assets/HomePageAssets/PartnersImgs/partner8.png";
 import honeyService from "../assets/HomePageAssets/honeyService.jpg";
 import HomeModal from "./modal";
+import mill1 from "../assets/HomePageAssets/mill1.svg";
+import mill2 from "../assets/HomePageAssets/mill2.svg";
+import mill3 from "../assets/HomePageAssets/mill3.svg";
+import mill4 from "../assets/HomePageAssets/mill4.svg";
+import honey1 from "../assets/HomePageAssets/honey1.jpg";
+import honey2 from "../assets/HomePageAssets/honey2.jpg";
+import honey3 from "../assets/HomePageAssets/honey3.jpg";
+import honey4 from "../assets/HomePageAssets/honey4.jpg";
+import honeybee from "../assets/HomePageAssets/honeybe.svg";
 const Home = () => {
   var settings = {
     dots: false,
@@ -179,9 +193,59 @@ const Home = () => {
           </AboutConRight>
         </div>
         <AboutConModal>
-          <HomeModal/>
+          <HomeModal />
         </AboutConModal>
+        <MillBeehive>
+          <div>
+            <img src={mill1} alt="mill1-img" />
+            <h2>46</h2>
+            <h4>Mil Beehive The Farm </h4>
+          </div>
+          <div>
+            <img src={mill2} alt="mill2-img" />
+            <h2>1200</h2>
+            <h4>Liters of Honey Sold </h4>
+          </div>
+          <div>
+            <img src={mill3} alt="mill3-img" />
+            <h2>46</h2>
+            <h4>Bees Families </h4>
+          </div>
+          <div>
+            <img src={mill4} alt="mill4-img" />
+            <h2>70</h2>
+            <h4>Hectares of Fields </h4>
+          </div>
+        </MillBeehive>
       </AboutCon>
+      <GalleryCon>
+        <GalleryTextCon>
+          <h4>Gallery</h4>
+          <img src={frame} alt="frame" />
+          <h2>Our Awesome Gallery</h2>
+        </GalleryTextCon>
+        <ImageGallery>
+          <div style={{ display: "flex", gap: "30px" }}>
+            <div>
+              <img
+                src={honey2}
+                alt="honey2"
+                className="honey2"
+                style={{ zIndex: "0" }}
+              />
+              <Honeybe>
+                <img src={honeybee} alt="honeybee" />
+                <h3>Popular Honey Recipes </h3>
+              </Honeybe>
+            </div>
+            <img src={honey1} alt="honey1" className="honey1" />
+          </div>
+          <div style={{ display: "flex", gap: "30px", marginTop: "30px" }}>
+            <img src={honey3} alt="honey3" className="honey3" />
+            <img src={honey4} alt="honey4" className="honey4" />
+          </div>
+        </ImageGallery>
+      </GalleryCon>
     </MainHome>
   );
 };

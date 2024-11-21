@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { Modal, Box, Typography } from "@mui/material";
-import picture1 from "..//assets/ai-generated-8680176_640.png";
+import beekeeper from "../assets/HomePageAssets/beekeeper (2).jpg";
 import { Video_ConTainer } from "../styles/style";
-import play from "../assets/play.svg";
+// import play from "../assets/play.svg";
+import playbtn from "../assets/HomePageAssets/playbtn.svg";
 
 const HomeModal = () => {
   const [openModalIndex, setOpenModalIndex] = useState<number | null>(null);
 
   const modals = [
     {
-      title: "Natural honey",
-      videoSrc: "https://www.youtube.com/embed/QHcADYEVGyk?si=rHNWDFk-6MZuWcjf",
-      imageSrc: picture1,
+      title: "Beekeeper work",
+      videoSrc: "https://www.youtube.com/embed/LEYEhOLiu7U?si=ZnhlIvdKuqXXiAX9",
+      imageSrc: beekeeper,
     },
   ];
 
@@ -39,12 +40,13 @@ const HomeModal = () => {
                   style={{
                     cursor: "pointer",
                     margin: "10px",
-                    width: "308px",
-                    height: "308px",
-                    borderRadius: "308px",
+                    width: "1100px",
+                    height: "550px",
+                    borderRadius: "20px",
                     border: "5px solid #FFF",
                     marginRight: "40px",
                     marginTop: "70px",
+                    zIndex: "0",
                   }}
                 />
                 <div
@@ -54,18 +56,17 @@ const HomeModal = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    // zIndex: "2",
                   }}
                 >
                   <img
-                    src={play}
+                    src={playbtn}
                     alt="play-img"
                     style={{
                       zIndex: "4",
                       display: "flex",
                       height: "50px",
                       width: "50px",
-                      marginLeft: "-380px",
+                      marginLeft: "-1050px",
                       marginTop: "50px",
                     }}
                   />
