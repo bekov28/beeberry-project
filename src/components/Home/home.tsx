@@ -159,7 +159,11 @@ const Home = () => {
         </OurServicesMain>
       </HomeOurServices>
       <AboutCon>
-        <div style={{ padding: "0px 90px" }}>
+        <div
+          style={{
+            padding: "0px 90px",
+          }}
+        >
           <h6>About Beeberry</h6>
           <img src={frame} alt="frame" />
         </div>

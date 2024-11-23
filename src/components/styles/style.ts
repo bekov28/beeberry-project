@@ -1424,7 +1424,16 @@ export const AboutCon = styled.div`
   flex-direction: column;
   margin-top: 70px;
   width: 1100px;
+  h6 {
+    color: var(--pragrap, #50413c);
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+  }
 `;
+
 export const AboutConLeft = styled.div`
   h2 {
     color: var(--Black, #2b221f);
@@ -1603,4 +1612,143 @@ export const Honeybe = styled.div`
     font-weight: 800;
     line-height: 40px;
   }
+`;
+
+// AboutUs
+
+export const AboutUsMain = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const AboutUsFirst = styled.div`
+  height: 150px;
+  flex-shrink: 0;
+  background: var(--Black-separate, #201a18);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: "Arima";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+  }
+`;
+export const BeeberryCon = styled.div`
+  height: 500px;
+  background: #fff;
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-areas: "a a";
+  gap: 50px;
+`;
+export const BeeberryConLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 340px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  .AboutImg1 {
+    z-index: 0;
+    margin-left: -150px;
+  }
+  .AboutImg2 {
+    z-index: 1;
+    margin-top: -200px;
+  }
+`;
+export const BeeberryConRight = styled.div``;
+
+export const Title = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  h6 {
+    color: var(--pragrap, #50413c);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+  }
+`;
+export const BeeberryHoney = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  h2 {
+    width: 549px;
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+  }
+  h3 {
+    width: 572px;
+    color: var(--pragrap, #50413c);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 5px;
+  }
+`;
+export const TickText = styled.div`
+  display: flex;
+  margin-top: 15px;
+  padding-bottom: 0px;
+  h3 {
+    color: var(--pragrap, #50413c);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+  }
+`;
+export const YellowTwoBtn = styled.button`
+  width: 202px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-top: 20px;
+  background-color: #fcc41a;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  &:active {
+    transform: scale(0.98);
+  }
+  &:hover {
+    background-color: #ffd700;
+  }
+  color: #491403;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.63px;
+  text-transform: uppercase;
 `;
