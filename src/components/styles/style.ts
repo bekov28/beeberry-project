@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import beekeeper from "../assets/AboutUsAssets/beekeeper.jpg";
 
 export const MainCon = styled.div`
   display: flex;
@@ -1645,7 +1646,7 @@ export const BeeberryCon = styled.div`
   background: #fff;
   display: flex;
   margin-top: 70px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   display: grid;
   grid-template-areas: "a a";
   gap: 50px;
@@ -1716,8 +1717,10 @@ export const BeeberryHoney = styled.div`
 `;
 export const TickText = styled.div`
   display: flex;
-  margin-top: 15px;
-  padding-bottom: 0px;
+  justify-content: center;
+  margin-top: 10px;
+  height: 30px;
+
   h3 {
     color: var(--pragrap, #50413c);
     font-family: Roboto;
@@ -1725,6 +1728,9 @@ export const TickText = styled.div`
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
+  }
+  img {
+    margin-top: 10px;
   }
 `;
 export const YellowTwoBtn = styled.button`
@@ -1751,4 +1757,60 @@ export const YellowTwoBtn = styled.button`
   line-height: 30px;
   letter-spacing: 0.63px;
   text-transform: uppercase;
+`;
+export const GetInTouch = styled.div`
+  width: 1100px;
+`;
+
+export const GetInTouchIn = styled.div`
+  width: 450px;
+  height: 285px;
+  flex-shrink: 0;
+  opacity: 0.9;
+  background: var(--Black, #2b221f);
+  z-index: 1;
+  margin-top: -290px;
+  margin-left: 125px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  h2 {
+    color: #fff;
+    font-family: "Arima";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 35px;
+    margin-top: 10px;
+  }
+  h6 {
+    color: #fff;
+    text-align: center;
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+  }
+  img {
+    margin-top: 10px;
+  }
+  p {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 10px;
+  }
+`;
+export const AmazingTeam = styled.div`
+  height: 981px;
+  background-color: #f9f6f2;
+  width: 1100px;
+  padding: 70px;
+  margin-bottom: 50px;
 `;

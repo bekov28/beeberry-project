@@ -2,10 +2,13 @@ import {
   AboutCon,
   AboutUsFirst,
   AboutUsMain,
+  AmazingTeam,
   BeeberryCon,
   BeeberryConLeft,
   BeeberryConRight,
   BeeberryHoney,
+  GetInTouch,
+  GetInTouchIn,
   TickText,
   Title,
   YellowBtn,
@@ -15,6 +18,8 @@ import aboutImg1 from "../assets/AboutUsAssets/honey-1006972_640.jpg";
 import aboutImg2 from "../assets/AboutUsAssets//honey-8045459_640.jpg";
 import frame from "../assets/Frame.svg";
 import tick from "../assets/AboutUsAssets/tick.svg";
+import AboutModal from "./modal";
+import star from "../assets/AboutUsAssets/star.svg";
 
 const AboutUs = () => {
   return (
@@ -56,6 +61,28 @@ const AboutUs = () => {
           </BeeberryHoney>
         </BeeberryConRight>
       </BeeberryCon>
+      <GetInTouch>
+        <AboutModal />
+        <GetInTouchIn>
+          <div>
+            <h6>Get In Touch</h6>
+            <img src={frame} alt="frame" />
+          </div>
+          <div>
+            <h2>
+              Find Us Here. Make <br /> Real Results Happen.
+            </h2>
+            <img src={star} alt="star-img" />
+            <p>Trust Score 4.6 (Based on 1,500 Reviews)</p>
+          </div>
+        </GetInTouchIn>
+      </GetInTouch>
+      <AmazingTeam>
+        <Title>
+          <h6>About Us</h6>
+          <img src={frame} alt="frame" />
+        </Title>
+      </AmazingTeam>
     </AboutUsMain>
   );
 };

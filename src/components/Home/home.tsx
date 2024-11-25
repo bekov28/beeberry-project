@@ -52,11 +52,14 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 8,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     vertical: false,
     arrows: false,
     centerMode: true,
     centerPadding: "15px",
+    autoplay: true,
+    autoplaySpeed: 1500,
+    cssEase: "ease-and-out",
     responsive: [
       {
         breakpoint: 1250,
