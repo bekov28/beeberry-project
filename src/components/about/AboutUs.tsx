@@ -7,6 +7,7 @@ import {
   BeeberryConLeft,
   BeeberryConRight,
   BeeberryHoney,
+  CarouselDiv,
   GetInTouch,
   GetInTouchIn,
   TickText,
@@ -20,8 +21,28 @@ import frame from "../assets/Frame.svg";
 import tick from "../assets/AboutUsAssets/tick.svg";
 import AboutModal from "./modal";
 import star from "../assets/AboutUsAssets/star.svg";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import leslie from "../assets/AboutUsAssets/beekeeper1.jpg";
 
 const AboutUs = () => {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  };
   return (
     <AboutUsMain>
       <AboutUsFirst>
@@ -79,9 +100,37 @@ const AboutUs = () => {
       </GetInTouch>
       <AmazingTeam>
         <Title>
-          <h6>About Us</h6>
+          <h6>Amazing Team</h6>
           <img src={frame} alt="frame" />
+          <h2> Our Team of Experts</h2>
         </Title>
+        <div>
+          <Carousel
+            swipeable={false}
+            draggable={false}
+            showDots={false}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={false}
+            autoPlaySpeed={1000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+          >
+            <CarouselDiv>
+              <img src={leslie} alt="leslie-img" />
+              <div>
+                <h2>Leslie Alexander</h2>
+                <h4>Beekeeper</h4>
+              </div>
+            </CarouselDiv>
+          </Carousel>
+        </div>
       </AmazingTeam>
     </AboutUsMain>
   );

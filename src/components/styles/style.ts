@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import beekeeper from "../assets/AboutUsAssets/beekeeper.jpg";
+import beekeeper1 from "../assets/AboutUsAssets/beekeeper1.jpg";
 
 export const MainCon = styled.div`
   display: flex;
@@ -1813,4 +1814,35 @@ export const AmazingTeam = styled.div`
   width: 1100px;
   padding: 70px;
   margin-bottom: 50px;
+  h2 {
+    color: var(--Black, #2b221f);
+    text-align: center;
+    font-family: "Arima";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 80px;
+  }
 `;
+export const CarouselDiv = styled.div`
+  width: 300px;
+  height: 435px;
+  flex-shrink: 0;
+  margin-top: 30px;
+  cursor: pointer;
+  border: 1px solid black;
+`;
+// export const GreenCon = styled.div`
+//   width: 300px;
+//   background: var(--Green, #639533);
+
+//   h2 {
+//     color: #fff;
+//     font-family: Roboto;
+//     font-size: 26px;
+//     font-style: normal;
+//     font-weight: 500;
+//     line-height: 35px;
+//     height: 50px;
+//   }
+// `;

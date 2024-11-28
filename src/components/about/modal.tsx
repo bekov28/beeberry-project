@@ -37,14 +37,10 @@ const AboutModal = () => {
                   alt={`Video ${index + 1}`}
                   onClick={() => handleOpen(index)}
                   style={{
-                    cursor: "pointer",
-                    // margin: "10px",
+                    cursor: "pointer",    
                     width: "1100px",
-                    height: "400px",
-                    // borderRadius: "20px",
+                    height: "400px", 
                     border: "5px solid #FFF",
-                    marginRight: "40px",
-                    marginTop: "70px",
                     zIndex: "0",
                   }}
                 />
