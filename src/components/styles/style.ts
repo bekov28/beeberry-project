@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import beekeeper from "../assets/AboutUsAssets/beekeeper.jpg";
-import beekeeper1 from "../assets/AboutUsAssets/beekeeper1.jpg";
+import leslie from "../assets/AboutUsAssets/beekeeper1.jpg";
+import savannah from "../assets/AboutUsAssets/beekeeper2.jpg";
+import cameroon from "../assets/AboutUsAssets/beekeeper3.jpg";
 
 export const MainCon = styled.div`
   display: flex;
@@ -1047,7 +1048,7 @@ export const MainFooter = styled.div`
   height: 668px;
   flex-shrink: 0;
   background: var(--Black, #2b221f);
-  margin-top: 50px;
+  /* margin-top: 50px; */
 `;
 
 export const FooterYellow = styled.div`
@@ -1809,11 +1810,11 @@ export const GetInTouchIn = styled.div`
   }
 `;
 export const AmazingTeam = styled.div`
-  height: 981px;
+  height: 800px;
   background-color: #f9f6f2;
   width: 1100px;
-  padding: 70px;
-  margin-bottom: 50px;
+  padding: 60px;
+
   h2 {
     color: var(--Black, #2b221f);
     text-align: center;
@@ -1826,23 +1827,170 @@ export const AmazingTeam = styled.div`
 `;
 export const CarouselDiv = styled.div`
   width: 300px;
-  height: 435px;
+  height: 475px;
   flex-shrink: 0;
   margin-top: 30px;
   cursor: pointer;
-  border: 1px solid black;
+  background-image: url(${leslie});
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.01);
+    opacity: 0.8;
+  }
 `;
-// export const GreenCon = styled.div`
-//   width: 300px;
-//   background: var(--Green, #639533);
 
-//   h2 {
-//     color: #fff;
-//     font-family: Roboto;
-//     font-size: 26px;
-//     font-style: normal;
-//     font-weight: 500;
-//     line-height: 35px;
-//     height: 50px;
-//   }
-// `;
+export const GreenCon = styled.div`
+  width: 100%;
+  height: 80px;
+  flex-shrink: 0;
+  background: var(--Green, #639533);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  z-index: 1;
+
+  h2 {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+  }
+  h4 {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+  }
+`;
+export const CarouselDiv2 = styled.div`
+  width: 300px;
+  height: 475px;
+  flex-shrink: 0;
+  margin-top: 30px;
+  cursor: pointer;
+  background-image: url(${savannah});
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.01);
+    opacity: 0.8;
+  }
+`;
+export const CarouselDiv3 = styled.div`
+  width: 300px;
+  height: 475px;
+  flex-shrink: 0;
+  margin-top: 30px;
+  cursor: pointer;
+  background-image: url(${cameroon});
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.01);
+    opacity: 0.8;
+  }
+`;
+export const WorkingProcess = styled.div`
+  width: 1100px;
+  height: 480px;
+  flex-shrink: 0;
+  background: #2b221f;
+  padding: 0px;
+  img.dripping {
+    width: 152px;
+    height: 219px;
+    flex-shrink: 0;
+    margin-right: -28px;
+  }
+  h6 {
+    color: #fff;
+    text-align: center;
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+  }
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: "Arima";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    margin-top: 30px;
+  }
+`;
+export const WorkIconCon = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0px 50px;
+
+  img {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  img.special {
+    width: 58px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+`;
+
+// Contact Section
+
+export const MainContact = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const ContactCon = styled.div`
+  height: 150px;
+  flex-shrink: 0;
+  background: var(--Black-separate, #201a18);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 500px;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: "Arima";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+  }
+`;

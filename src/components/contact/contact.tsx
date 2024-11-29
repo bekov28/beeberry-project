@@ -1,8 +1,12 @@
+import { ContactCon, MainContact } from "../styles/style";
+
 const Contact = () => {
   return (
-    <div>
-      <div style={{ height: "1000px" }}> Contact</div>
-    </div>
+    <MainContact>
+      <ContactCon>
+        <h2>Contact</h2>
+      </ContactCon>
+    </MainContact>
   );
 };
 
