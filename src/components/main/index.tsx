@@ -153,8 +153,10 @@ const MainPage = () => {
         style={{
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "#F9F6F2",
+          backgroundColor: "#201A18",
+          width: "100%",
+          overflow: "hidden",
+          height: "700px",
         }}
       >
         <BackgroundImg>
@@ -181,9 +183,7 @@ const MainPage = () => {
             <ActiveImg src={arrowDown} alt="arrow-img" />
           </div>
         </BackgroundImg>
-        <div style={{ width: "800px" }}>
-          <BackRightCon src={honey} alt="honey" />
-        </div>
+        <BackRightCon src={honey} alt="honey" />
       </div>
       <ModalCon>
         <AppModal />
@@ -257,18 +257,29 @@ const MainPage = () => {
         </Con>
       </DownloadCon>
       <OurProducts>
-        <div className="OurProduct">
-          <p>Our Products</p>
-          <div>
-            <img src={frame} alt="frame" />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            width: "100%",
+            maxWidth: "1350px",
+          }}
+        >
+          <div className="OurProduct">
+            <p>Our Products</p>
+            <div>
+              <img src={frame} alt="frame" />
+            </div>
+          </div>
+          <div className="OurCon">
+            <h2>Our 100% Fresh Honey</h2>
+            <GreenBtn style={{ zIndex: "5" }} className="More">
+              All products
+            </GreenBtn>
           </div>
         </div>
-        <div className="OurCon">
-          <h2>Our 100% Fresh Honey</h2>
-          <GreenBtn style={{ zIndex: "5" }} className="More">
-            All products
-          </GreenBtn>
-        </div>
+
         <SliderCon>
           <Slider {...settings}>
             <div className="MiniCarousel">
@@ -562,138 +573,145 @@ const MainPage = () => {
             style={{ display: "flex", marginTop: "30px", gap: "80px" }}
           ></div>
         </div>
-        <Carousel
-          swipeable={true}
-          draggable={true}
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            maxWidth: "1520px",
+          }}
         >
-          <CarouselItem>
-            <div className="UpperCon">
-              <div style={{ marginTop: "10px", display: "flex" }}>
-                <img src={man1} alt="man1" />
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    marginLeft: "20px",
-                  }}
-                >
-                  <p>Savannah Hopkins</p>
-                  <h4>29 Nov 2022</h4>
+          <Carousel
+            swipeable={true}
+            draggable={true}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlaySpeed={1000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+          >
+            <CarouselItem>
+              <div className="UpperCon">
+                <div style={{ marginTop: "10px", display: "flex" }}>
+                  <img src={man1} alt="man1" />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      marginLeft: "20px",
+                    }}
+                  >
+                    <p>Savannah Hopkins</p>
+                    <h4>29 Nov 2022</h4>
+                  </div>
                 </div>
+                <h3>
+                  I have taken a long time to write this review mainly because
+                  we don't consume honey regularly. But, now we were sick and
+                  some ayurvedic preparations needed honey as am ingredient.
+                  That's when we started consuming this honey. I must say 🤗
+                </h3>
               </div>
-              <h3>
-                I have taken a long time to write this review mainly because we
-                don't consume honey regularly. But, now we were sick and some
-                ayurvedic preparations needed honey as am ingredient. That's
-                when we started consuming this honey. I must say 🤗
-              </h3>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="UpperCon">
-              <div style={{ marginTop: "10px", display: "flex" }}>
-                <img src={man2} alt="man2" />
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    marginLeft: "20px",
-                  }}
-                >
-                  <p>Leslie Alexander</p>
-                  <h4>24 Sep 2023</h4>
+            </CarouselItem>
+            <CarouselItem>
+              <div className="UpperCon">
+                <div style={{ marginTop: "10px", display: "flex" }}>
+                  <img src={man2} alt="man2" />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      marginLeft: "20px",
+                    }}
+                  >
+                    <p>Leslie Alexander</p>
+                    <h4>24 Sep 2023</h4>
+                  </div>
                 </div>
+                <h3>
+                  When I received the product, I received a thank you note from
+                  the company on Whatsapp and a phone call, which was intended
+                  to describe how the honey had been harvested. This is very
+                  irritating, I don't know why you have an online platform.😊 🤩
+                </h3>
               </div>
-              <h3>
-                When I received the product, I received a thank you note from
-                the company on Whatsapp and a phone call, which was intended to
-                describe how the honey had been harvested. This is very
-                irritating, I don't know why you have an online platform.😊 🤩
-              </h3>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="UpperCon">
-              <div style={{ marginTop: "10px", display: "flex" }}>
-                <img src={man3} alt="man1" />
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    marginLeft: "20px",
-                  }}
-                >
-                  <p>Savannah Hopkins</p>
-                  <h4>29 Nov 2022</h4>
+            </CarouselItem>
+            <CarouselItem>
+              <div className="UpperCon">
+                <div style={{ marginTop: "10px", display: "flex" }}>
+                  <img src={man3} alt="man1" />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      marginLeft: "20px",
+                    }}
+                  >
+                    <p>Savannah Hopkins</p>
+                    <h4>29 Nov 2022</h4>
+                  </div>
                 </div>
+                <h3>
+                  I have responded to the amounts of money offered in Honey Gold
+                  from places I regularly shop. I have activated the gold for
+                  the product. All my purchases with Kate Spade honey gold as
+                  advertised and activated are not awarded in my account. 🤗
+                </h3>
               </div>
-              <h3>
-                I have responded to the amounts of money offered in Honey Gold
-                from places I regularly shop. I have activated the gold for the
-                product. All my purchases with Kate Spade honey gold as
-                advertised and activated are not awarded in my account. 🤗
-              </h3>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="UpperCon">
-              <div style={{ marginTop: "10px", display: "flex" }}>
-                <img src={man4} alt="man4" />
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    marginLeft: "20px",
-                  }}
-                >
-                  <p>Susanna Hopkins</p>
-                  <h4>29 Nov 2023</h4>
+            </CarouselItem>
+            <CarouselItem>
+              <div className="UpperCon">
+                <div style={{ marginTop: "10px", display: "flex" }}>
+                  <img src={man4} alt="man4" />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      marginLeft: "20px",
+                    }}
+                  >
+                    <p>Susanna Hopkins</p>
+                    <h4>29 Nov 2023</h4>
+                  </div>
                 </div>
+                <h3>
+                  Finally a truly useful deal website that really provides a way
+                  so that you never miss a deal. No more searching for coupon
+                  codes or wasting valuable time trying to fin ones that work.
+                  This website has an extention that automatically searches
+                </h3>
               </div>
-              <h3>
-                Finally a truly useful deal website that really provides a way
-                so that you never miss a deal. No more searching for coupon
-                codes or wasting valuable time trying to fin ones that work.
-                This website has an extention that automatically searches
-              </h3>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="UpperCon">
-              <div style={{ marginTop: "10px", display: "flex" }}>
-                <img src={man5} alt="man5" />
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    marginLeft: "20px",
-                  }}
-                >
-                  <p>Laura Obama</p>
-                  <h4>29 Jan 2024</h4>
+            </CarouselItem>
+            <CarouselItem>
+              <div className="UpperCon">
+                <div style={{ marginTop: "10px", display: "flex" }}>
+                  <img src={man5} alt="man5" />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      marginLeft: "20px",
+                    }}
+                  >
+                    <p>Laura Obama</p>
+                    <h4>29 Jan 2024</h4>
+                  </div>
                 </div>
+                <h3>
+                  I have responded to the amounts of money offered in Honey Gold
+                  from places I regularly shop. I have activated the gold for
+                  the product. All my purchases with Kate Spade honey gold as
+                  advertised and activated are not awarded in my account. 🤗
+                </h3>
               </div>
-              <h3>
-                I have responded to the amounts of money offered in Honey Gold
-                from places I regularly shop. I have activated the gold for the
-                product. All my purchases with Kate Spade honey gold as
-                advertised and activated are not awarded in my account. 🤗
-              </h3>
-            </div>
-          </CarouselItem>
-        </Carousel>
-        ;
+            </CarouselItem>
+          </Carousel>
+        </div>
       </Testimonial>
       <BlogCon>
         <div style={{ marginBottom: "300px" }}>

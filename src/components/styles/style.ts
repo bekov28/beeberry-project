@@ -48,10 +48,10 @@ export const NavFirstCon = styled.div`
 
 export const MenuCon = styled.div`
   display: flex;
-  gap: 40px;
-  cursor: pointer;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+  cursor: pointer;
 
   p {
     color: #201a18;
@@ -116,9 +116,6 @@ export const IconCon = styled.div`
 `;
 
 export const BackgroundImg = styled.div`
-  flex-shrink: 0;
-  background-color: #201a18;
-  width: 819px;
   height: 600px;
   z-index: 0;
   position: relative;
@@ -127,7 +124,10 @@ export const BackgroundImg = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 115px;
-  margin-right: -100px;
+  background-color: #201a18;
+  flex-shrink: 0;
+  margin-left: 100px;
+
   h1 {
     color: #fff;
     font-family: "Arima", sans-serif;
@@ -158,15 +158,15 @@ export const ActiveImg = styled.img`
 `;
 
 export const BackRightCon = styled.img`
-  width: 1100px;
-  height: 900px;
+  width: 1000px;
+  height: 1000px;
   flex-shrink: 0;
-  margin-left: -100px;
   display: flex;
   margin-top: -300px;
   z-index: 0;
   border-radius: 50%;
   clip-path: inset(240px 200px 0 0);
+  margin-right: -240px;
 `;
 
 export const ModalCon = styled.div`
@@ -285,7 +285,7 @@ export const OurServices = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #f9f6f2;
-  width: 1520px;
+  width: 100%;
 
   h4 {
     color: var(--pragrap, #50413c);
@@ -458,12 +458,16 @@ export const Con = styled.div`
 // Our Products Section Styles
 
 export const OurProducts = styled.div`
-  width: 1520px;
+  width: 100%;
   height: auto;
   background: var(--Niotrol, #f9f6f2);
   margin-top: -230px;
   padding-left: 140px;
   padding-right: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .OurProduct {
     margin-top: 350px;
@@ -503,7 +507,7 @@ export const OurProducts = styled.div`
 `;
 
 export const SliderCon = styled.div`
-  width: 100%;
+  max-width: 1420px;
   z-index: 0;
 
   .MiniCarousel {
@@ -704,10 +708,14 @@ export const EasyCon = styled.div`
   }
 `;
 export const Testimonial = styled.div`
-  width: 1520px;
+  width: 100%;
   height: 760px;
   flex-shrink: 0;
   background: var(--Black, #2b221f);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .testCon {
     display: flex;
@@ -804,7 +812,7 @@ export const BlogCon = styled.div`
   justify-content: center;
   align-items: center;
   background: #f9f6f2;
-  width: 1520px;
+  width: 100%;
 
   h4 {
     color: var(--pragrap, #50413c);
@@ -1761,7 +1769,11 @@ export const YellowTwoBtn = styled.button`
   text-transform: uppercase;
 `;
 export const GetInTouch = styled.div`
-  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 `;
 
 export const GetInTouchIn = styled.div`
@@ -1772,12 +1784,13 @@ export const GetInTouchIn = styled.div`
   background: var(--Black, #2b221f);
   z-index: 1;
   margin-top: -290px;
-  margin-left: 125px;
   padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+  margin-left: -390px;
+
   h2 {
     color: #fff;
     font-family: "Arima";
@@ -1810,9 +1823,11 @@ export const GetInTouchIn = styled.div`
   }
 `;
 export const AmazingTeam = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
   height: 800px;
   background-color: #f9f6f2;
-  width: 1100px;
   padding: 60px;
 
   h2 {
@@ -1825,6 +1840,8 @@ export const AmazingTeam = styled.div`
     line-height: 80px;
   }
 `;
+export const CarouselComponent = styled.div``;
+
 export const CarouselDiv = styled.div`
   width: 300px;
   height: 475px;
@@ -1973,6 +1990,7 @@ export const MainContact = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 `;
 export const ContactCon = styled.div`
   height: 150px;
@@ -1982,7 +2000,6 @@ export const ContactCon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 500px;
 
   h2 {
     color: #fff;
@@ -1992,5 +2009,123 @@ export const ContactCon = styled.div`
     font-style: normal;
     font-weight: 900;
     line-height: 72px;
+  }
+`;
+export const SendMessage = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  width: 100%;
+  height: 600px;
+  background: var(--Niotrol, #f9f6f2);
+  padding: 100px;
+  h2 {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    margin-top: 15px;
+  }
+  h5 {
+    color: var(--pragrap, #50413c);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 15px;
+  }
+`;
+export const SocialIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(43, 34, 31, 0.1);
+    cursor: pointer;
+    &:hover {
+      background-color: #fcc41a;
+      transform: scale(1.1);
+    }
+  }
+`;
+
+export const ContanctCon = styled.div`
+  display: flex;
+  width: 400px;
+  height: 470px;
+  flex-shrink: 0;
+  background-color: #fff;
+  stroke-width: 1px;
+  stroke: rgba(43, 34, 31, 0.1);
+  padding: 20px;
+
+  label,
+  input,
+  textarea {
+    width: 100%;
+  }
+  label {
+    color: var(--Black, #2b221f);
+    font-family: "Arima";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+  }
+  input {
+    border-radius: 5px;
+    border: 1px solid rgba(43, 34, 31, 0.1);
+    height: 40px;
+    flex-shrink: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  textarea {
+    border-radius: 5px;
+    border: 1px solid rgba(43, 34, 31, 0.1);
+    background: #fff;
+    height: 70px;
+    flex-shrink: 0;
+    padding: 10px;
+  }
+`;
+export const ContactUsCon = styled.div`
+  width: 100%;
+  height: 732px;
+  flex-shrink: 0;
+  background: #2b221f;
+  padding: 50px;
+  .title {
+    h6 {
+      color: #fff;
+      text-align: center;
+      font-family: "Arima";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 22px;
+    }
+    h2 {
+      color: #fff;
+      text-align: center;
+      font-family: "Arima";
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 60px;
+      margin-top: 20px;
+    }
   }
 `;

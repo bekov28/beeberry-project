@@ -14,6 +14,7 @@ import {
   BlogRightCon,
   BlogRightCon2,
   BlogRightCon3,
+  CarouselComponent,
   CarouselDiv,
   CarouselDiv2,
   CarouselDiv3,
@@ -134,7 +135,7 @@ const AboutUs = () => {
           <img src={frame} alt="frame" />
           <h2> Our Team of Experts</h2>
         </Title>
-        <div>
+        <CarouselComponent >
           <Carousel
             swipeable={true}
             draggable={true}
@@ -170,7 +171,7 @@ const AboutUs = () => {
               </GreenCon>
             </CarouselDiv3>
           </Carousel>
-        </div>
+        </CarouselComponent >
       </AmazingTeam>
       <WorkingProcess>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
