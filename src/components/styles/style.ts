@@ -747,16 +747,17 @@ export const Testimonial = styled.div`
   }
 `;
 export const CarouselItem = styled.div`
-  width: 480px;
+  width: auto;
   height: 314px;
   flex-shrink: 0;
   border-radius: 20px;
   background: var(--Black-separate, #201a18);
   box-shadow: 0px 4px 4px 0px rgba(43, 32, 18, 0.03);
-  padding: 50px;
+  padding: 30px;
   margin-top: 30px;
   border: 1px solid white;
   cursor: pointer;
+  margin-right: 20px;
   &:active {
     transform: scale(0.99);
   }
@@ -2103,10 +2104,11 @@ export const ContanctCon = styled.div`
 `;
 export const ContactUsCon = styled.div`
   width: 100%;
-  height: 732px;
+  height: 632px;
   flex-shrink: 0;
   background: #2b221f;
   padding: 50px;
+  margin-bottom: 100px;
   .title {
     h6 {
       color: #fff;
@@ -2127,5 +2129,66 @@ export const ContactUsCon = styled.div`
       line-height: 60px;
       margin-top: 20px;
     }
+  }
+`;
+
+export const ContactMini = styled.div`
+  display: grid;
+  grid-template-areas: "a a";
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+  @media only screen and (max-width: 1140px) {
+    grid-template-areas: "a";
+  }
+`;
+export const ContactMiniLeft = styled.div`
+  width: 520px;
+  height: 286px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--Black-separate, #201a18);
+  padding: 40px;
+  p {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+  }
+`;
+export const ContactMiniRight = styled.div`
+  width: 520px;
+  height: 286px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--Black-separate, #201a18);
+  padding: 40px;
+  p {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+  }
+  h3 {
+    color: #fff;
+    text-align: center;
+    font-family: "Arima";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+  }
+  h4 {
+    color: var(--yellow, #fcc41a);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
   }
 `;

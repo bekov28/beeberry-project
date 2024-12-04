@@ -1,5 +1,8 @@
 import {
   ContactCon,
+  ContactMini,
+  ContactMiniLeft,
+  ContactMiniRight,
   ContactUsCon,
   ContanctCon,
   MainContact,
@@ -14,6 +17,9 @@ import linkedin from "../assets/contactAssets/linkedin-in.svg";
 import instagram from "../assets/contactAssets/instagram.svg";
 import skype from "../assets/contactAssets/skype.svg";
 import { ContactUs } from "../mail";
+import headset from "../assets/contactAssets/headset.svg";
+import map from "../assets/contactAssets/map-marker-alt.svg";
+import envelope from "../assets/contactAssets/envelope.svg";
 
 const Contact = () => {
   return (
@@ -71,11 +77,69 @@ const Contact = () => {
           <img src={frame} alt="frame" />
           <h2> Get In Touch</h2>
         </Title>
-        <div>
-          <div></div>
-          <div></div>
-        </div>
+        <ContactMini>
+          <ContactMiniLeft>
+            <div style={{ display: "flex", gap: "20px", padding: "20px" }}>
+              <img src={headset} alt="headset" />
+              <p>+(82) 10-0000-0000</p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                gap: "20px",
+                padding: "20px",
+                borderTop: "1px dotted #50413C",
+                borderBottom: "1px dotted #50413C",
+              }}
+            >
+              <img src={map} alt="map" />
+              <p>+(82) Bucheon city, South Korea</p>
+            </div>
+            <div style={{ display: "flex", gap: "20px", padding: "20px" }}>
+              <img src={envelope} alt="letter" />
+              <p>berdiyororzu@gmail.com</p>
+            </div>
+          </ContactMiniLeft>
+          <ContactMiniRight>
+            <div>
+              <h3>Opening Hours</h3>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                padding: "10px",
+              }}
+            >
+              <p>Sat - Mon</p>
+              <p>10 AM - 8 PM</p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                padding: "10px",
+                borderTop: "1px dotted #50413C",
+                borderBottom: "1px dotted #50413C",
+              }}
+            >
+              <p>Tus - Thu</p>
+              <p>11 AM - 7 PM</p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                padding: "10px",
+              }}
+            >
+              <p>Friday</p>
+              <h4>Off - Day</h4>
+            </div>
+          </ContactMiniRight>
+        </ContactMini>
       </ContactUsCon>
+    
     </MainContact>
   );
 };

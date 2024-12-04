@@ -569,22 +569,18 @@ const MainPage = () => {
           <h4>Testimonial</h4>
           <img src={frame} alt="frame" />
           <h2>What People Say About Products </h2>
-          <div
-            style={{ display: "flex", marginTop: "30px", gap: "80px" }}
-          ></div>
         </div>
         <div
           style={{
-            display: "flex",
-            justifyContent: "center",
-            maxWidth: "1520px",
+            width: "100%",
+            maxWidth: "1550px",
           }}
         >
           <Carousel
             swipeable={true}
             draggable={true}
             responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
+            ssr={true}
             infinite={true}
             autoPlaySpeed={1000}
             keyBoardControl={true}
