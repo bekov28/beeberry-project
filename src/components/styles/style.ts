@@ -19,7 +19,7 @@ export const NavbarCon = styled.div`
   padding: 20px 50px;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  gap: 150px;
   background: var(--Black-separate, #201a18);
   z-index: 5;
 `;
