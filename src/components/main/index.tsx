@@ -20,7 +20,11 @@ import {
   HoneyPro,
   MainCon,
   MainFirst,
+  MainHoneyPro,
   ModalCon,
+  NaturalLeft,
+  NaturalMain,
+  NaturalRight,
   OurProducts,
   OurServices,
   PromotesCon,
@@ -30,6 +34,7 @@ import {
   WhyUsCon,
   WhyUsImg,
   WhyUsLeft,
+  WhyUsMain,
   WhyUsRight,
   YellowBtn,
   YourCon,
@@ -152,30 +157,33 @@ const MainPage = () => {
     <MainCon>
       <MainFirst>
         <BackgroundImg className="BackImg">
-          <div className="styleDiv">
-            <div className="natural">
+          <NaturalMain>
+            <NaturalLeft>
               <h1>Natural Organic Homemade Honey</h1>
               <h3>
                 We collect the best varieties of honey to bring health to your
-                home!Honey is a sweet and viscous substance made by several bees
+                home! <br />
+                Honey is a sweet and viscous substance made by several bees
               </h3>
-            </div>
-            <PromotesCon>
-              <div style={{ display: "flex", gap: "15px" }}>
-                <img src={mark} alt="mark" />
-                <p>Promotes burn and wound healing</p>
-              </div>
-              <div style={{ display: "flex", gap: "15px" }}>
-                <img src={mark} alt="mark" />
-                <p>May help suppress coughing in children</p>
-              </div>
-            </PromotesCon>
-            <ButtonsCon>
-              <GreenBtn>Contact us</GreenBtn>
-              <YellowBtn>Shop Now</YellowBtn>
-            </ButtonsCon>
-            <ActiveImg src={arrowDown} alt="arrow-img" />
-          </div>
+            </NaturalLeft>
+            <NaturalRight>
+              <PromotesCon>
+                <div style={{ display: "flex", gap: "15px" }}>
+                  <img src={mark} alt="mark" />
+                  <p>Promotes burn and wound healing</p>
+                </div>
+                <div style={{ display: "flex", gap: "15px" }}>
+                  <img src={mark} alt="mark" />
+                  <p>May help suppress coughing in children</p>
+                </div>
+              </PromotesCon>
+              <ButtonsCon className="buttonCon">
+                <GreenBtn>Contact us</GreenBtn>
+                <YellowBtn>Shop Now</YellowBtn>
+              </ButtonsCon>
+              <ActiveImg src={arrowDown} alt="arrow-img" className="arrowImg" />
+            </NaturalRight>
+          </NaturalMain>
         </BackgroundImg>
         <BackRightCon src={honey} alt="honey" className="RightCon" />
       </MainFirst>
@@ -186,7 +194,7 @@ const MainPage = () => {
         <h4>Our Services</h4>
         <img src={frame} alt="frame" />
         <h2>We Provide The Best Quality</h2>
-        <div style={{ display: "flex", gap: "30px" }}>
+        <MainHoneyPro>
           <HoneyPro className="HoneyCon">
             <img src={honeycomb} alt="honeycomb-img" />
             <p>Honey Production</p>
@@ -203,7 +211,7 @@ const MainPage = () => {
             <img src={honey007} alt="honey007-img" />
             <p>Swarm Removal</p>
           </HoneyPro>
-        </div>
+        </MainHoneyPro>
         <div
           style={{ marginTop: "50px", width: "194px", marginBottom: "100px" }}
         >
@@ -214,7 +222,7 @@ const MainPage = () => {
         <h4>Why Us</h4>
         <img src={frame} alt="frame" />
         <h2>Why Choose Our Products</h2>
-        <div style={{ display: "flex", marginTop: "30px", gap: "80px" }}>
+        <WhyUsMain>
           <WhyUsLeft>
             <img src={natural} alt="natural-img" />
             <img src={flower} alt="flower-img" />
@@ -225,12 +233,12 @@ const MainPage = () => {
             alt="bee-img"
             style={{ width: "411px", height: "434px" }}
           />
-          <WhyUsRight>
+          <WhyUsRight className="whyUsRight">
             <img src={beesSeal} alt="beesSeal-img" />
             <img src={hundred} alt="hundred-img" />
             <img src={increase} alt="increase-img" />
           </WhyUsRight>
-        </div>
+        </WhyUsMain>
       </WhyUsCon>
       <DownloadCon>
         <div>

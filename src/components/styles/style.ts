@@ -183,7 +183,7 @@ export const BackgroundImg = styled.div`
     font-style: normal;
     font-weight: 900;
     line-height: 72px;
-    width: 575px;
+    width: 100%;
   }
   h3 {
     color: #aca5a3;
@@ -192,7 +192,7 @@ export const BackgroundImg = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
-    width: 486px;
+    width: 100%;
     margin-top: 20px;
   }
 
@@ -242,6 +242,35 @@ export const ModalCon = styled.div`
     display: none;
   }
 `;
+
+export const NaturalMain = styled.div`
+  @media only screen and (max-width: 1300px) {
+    display: flex;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1080px) {
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 540px) {
+    padding: 0 40px;
+    .buttonCon,
+    .arrowImg {
+      margin-left: 50px;
+    }
+  }
+`;
+
+export const NaturalLeft = styled.div`
+  max-width: 575px;
+  width: 100%;
+  @media only screen and (max-width: 540px) {
+    h1 {
+      margin-left: 30px;
+    }
+  }
+`;
+
+export const NaturalRight = styled.div``;
 
 export const PromotesCon = styled.div`
   display: flex;
@@ -368,8 +397,22 @@ export const OurServices = styled.div`
     margin-top: 30px;
   }
 `;
+export const MainHoneyPro = styled.div`
+  display: grid;
+  grid-template-areas: "a a a a";
+  gap: 30px;
+  @media only screen and (max-width: 1340px) {
+    grid-template-areas: "a a a";
+  }
+  @media only screen and (max-width: 1020px) {
+    grid-template-areas: "a a";
+  }
+  @media only screen and (max-width: 650px) {
+    grid-template-areas: "a";
+  }
+`;
+
 export const HoneyPro = styled.div`
-  width: 300px;
   height: 243px;
   flex-shrink: 0;
   border-radius: 0px 20px 20px 0px;
@@ -428,6 +471,20 @@ export const WhyUsCon = styled.div`
     font-weight: 900;
     line-height: 60px;
     margin-top: 30px;
+    width: 100vw;
+  }
+`;
+export const WhyUsMain = styled.div`
+  display: grid;
+  grid-template-areas: "a a a";
+  margin-top: 30px;
+  gap: 80px;
+
+  @media only screen and (max-width: 1330px) {
+    grid-template-areas: "a a";
+  }
+  @media only screen and (max-width: 900px) {
+    grid-template-areas: "a";
   }
 `;
 
