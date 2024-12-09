@@ -19,6 +19,7 @@ import {
   HealthMini,
   HoneyPro,
   MainCon,
+  MainFirst,
   ModalCon,
   OurProducts,
   OurServices,
@@ -149,23 +150,16 @@ const MainPage = () => {
   };
   return (
     <MainCon>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          backgroundColor: "#201A18",
-          width: "100%",
-          overflow: "hidden",
-          height: "700px",
-        }}
-      >
-        <BackgroundImg>
-          <div>
-            <h1>Natural Organic Homemade Honey</h1>
-            <h3>
-              We collect the best varieties of honey to bring health to your
-              home!Honey is a sweet and viscous substance made by several bees
-            </h3>
+      <MainFirst>
+        <BackgroundImg className="BackImg">
+          <div className="styleDiv">
+            <div className="natural">
+              <h1>Natural Organic Homemade Honey</h1>
+              <h3>
+                We collect the best varieties of honey to bring health to your
+                home!Honey is a sweet and viscous substance made by several bees
+              </h3>
+            </div>
             <PromotesCon>
               <div style={{ display: "flex", gap: "15px" }}>
                 <img src={mark} alt="mark" />
@@ -183,8 +177,8 @@ const MainPage = () => {
             <ActiveImg src={arrowDown} alt="arrow-img" />
           </div>
         </BackgroundImg>
-        <BackRightCon src={honey} alt="honey" />
-      </div>
+        <BackRightCon src={honey} alt="honey" className="RightCon" />
+      </MainFirst>
       <ModalCon>
         <AppModal />
       </ModalCon>

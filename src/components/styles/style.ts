@@ -19,9 +19,34 @@ export const NavbarCon = styled.div`
   padding: 20px 50px;
   justify-content: center;
   align-items: center;
-  gap: 200px;
   background: var(--Black-separate, #201a18);
   z-index: 5;
+  width: 100%;
+
+  @media only screen and (max-width: 1100px) {
+    .icon {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    .pages {
+      display: none;
+    }
+    .about {
+      margin-right: 15px;
+    }
+  }
+  @media only screen and (max-width: 670px) {
+    .gallery {
+      display: none;
+    }
+    .light {
+      display: none;
+    }
+    .whiteP {
+      margin-right: -15px;
+    }
+  }
 `;
 
 export const NavFirstMainCon = styled.div``;
@@ -44,14 +69,19 @@ export const NavFirstCon = styled.div`
   .whiteP {
     color: white;
   }
+  .whiteP:hover {
+    color: #fcc41a;
+    transform: scale (1.03);
+  }
 `;
 
 export const MenuCon = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
   cursor: pointer;
+  width: 100%;
+  padding: 0 40px;
 
   p {
     color: #201a18;
@@ -115,11 +145,28 @@ export const IconCon = styled.div`
   }
 `;
 
+export const MainFirst = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #201a18;
+  width: 100%;
+  overflow: hidden;
+  max-height: 700px;
+
+  @media only screen and (max-width: 1300px) {
+    .RightCon {
+      display: none;
+    }
+  }
+`;
+
 export const BackgroundImg = styled.div`
-  height: 600px;
+  max-height: 600px;
   z-index: 0;
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-areas: "a";
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -147,7 +194,14 @@ export const BackgroundImg = styled.div`
     width: 486px;
     margin-top: 20px;
   }
+
+  @media only screen and (max-width: 1300px) {
+    .styleDiv {
+      grid-template-areas: "a a";
+    }
+  }
 `;
+
 export const ActiveImg = styled.img`
   position: "relative";
   margin-bottom: -120px;
@@ -158,8 +212,9 @@ export const ActiveImg = styled.img`
 `;
 
 export const BackRightCon = styled.img`
-  width: 1000px;
-  height: 1000px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 1000px;
   flex-shrink: 0;
   display: flex;
   margin-top: -300px;
@@ -181,6 +236,9 @@ export const ModalCon = styled.div`
 
   &:active {
     transform: scale(0.98);
+  }
+  @media only screen and (max-width: 1300px) {
+    display: none;
   }
 `;
 
