@@ -508,7 +508,8 @@ export const WhyUsImg = styled.img`
 // Download Section Styles
 
 export const DownloadCon = styled.div`
-  width: 1290px;
+  width: 90vw;
+  max-width: 1290px;
   height: 481px;
   flex-shrink: 0;
   border-radius: 20px;
@@ -516,7 +517,7 @@ export const DownloadCon = styled.div`
   display: flex;
   justify-content: left;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
   padding: 0 100px;
   z-index: 1;
 
@@ -540,7 +541,30 @@ export const DownloadCon = styled.div`
     line-height: 60px;
     margin-top: 32px;
   }
+  @media only screen and (max-width: 1180px) {
+    flex-direction: column;
+    padding: 30px 0px;
+    height: 100%;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 720px) {
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
 `;
+
+export const DownloadConFirst = styled.div`
+  @media only screen and (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+`;
+
 export const DownloadMini = styled.img`
   width: 180px;
   height: 52px;
@@ -557,6 +581,11 @@ export const DownloadMini = styled.img`
     margin-left: 20px;
     margin-bottom: -12px;
   }
+  @media only screen and (max-width: 720px) {
+    &.Google {
+      margin-left: 0px;
+    }
+  }
 `;
 export const Con = styled.div`
   width: 455px;
@@ -567,6 +596,14 @@ export const Con = styled.div`
     max-height: 590px;
     &:active {
       transform: scale(0.98);
+    }
+  }
+  @media only screen and (max-width: 1180px) {
+    height: 500px;
+    width: 400px;
+    img {
+      height: 500px;
+      width: 400px;
     }
   }
 `;
@@ -620,6 +657,12 @@ export const OurProducts = styled.div`
       line-height: 60px;
     }
   }
+`;
+export const OurProductsFirst = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
 `;
 
 export const SliderCon = styled.div`
@@ -825,20 +868,21 @@ export const EasyCon = styled.div`
 `;
 export const Testimonial = styled.div`
   width: 100%;
-  height: 760px;
+  height: 100%;
   flex-shrink: 0;
   background: var(--Black, #2b221f);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 
   .testCon {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 
     h4 {
       color: white;
@@ -1170,27 +1214,33 @@ export const MainFooter = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 668px;
+  height: 100%;
   flex-shrink: 0;
   background: var(--Black, #2b221f);
-  /* margin-top: 50px; */
+  padding: 50px;
 `;
 
 export const FooterYellow = styled.div`
-  display: flex;
-  width: 1290px;
-  height: 305px;
+  display: grid;
+  grid-template-areas: "a a";
+  max-width: 1290px;
+  width: 90vw;
   flex-shrink: 0;
   border-radius: 20px;
   background: var(--yellow, #fcc41a);
-  margin-top: -340px;
-  padding: 90px;
-  gap: 100px;
+  margin-top: -140px;
+  padding: 50px;
+  gap: 30px;
   justify-content: space-evenly;
   align-items: center;
+
+  @media only screen and (max-width: 1190px) {
+    grid-template-areas: "a";
+  }
 `;
 
 export const NewsLetterLeft = styled.div`
+  width: 100%;
   p {
     color: var(--pragrap, #50413c);
     text-align: center;
@@ -1211,13 +1261,24 @@ export const NewsLetterLeft = styled.div`
     line-height: 40px;
     margin-top: 10px;
   }
+  @media only screen and (max-width: 1190px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 580px) {
+    h3 {
+      font-size: 20px;
+    }
+  }
 `;
 export const NewsLetterRight = styled.div`
   display: flex;
   gap: 15px;
+  form {
+    width: 100%;
+  }
   input {
     width: 368px;
-    height: 60px;
+    height: 100%;
     flex-shrink: 0;
     padding: 20px;
     color: var(--pragrap, #50413c);
@@ -1234,13 +1295,37 @@ export const NewsLetterRight = styled.div`
       box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
     }
   }
+  @media only screen and (max-width: 700px) {
+    input {
+      width: 30vw;
+      font-size: 14px;
+    }
+  }
 `;
+
 export const BottomFooter = styled.div`
   margin-top: 100px;
-  display: flex;
+  display: grid;
+  grid-template-areas: "a a a a";
   justify-content: space-evenly;
   align-items: center;
   gap: 120px;
+
+  @media only screen and (max-width: 1350px) {
+    grid-template-areas: "a a a";
+    justify-content: center;
+    gap: 80px;
+  }
+  @media only screen and (max-width: 930px) {
+    grid-template-areas: "a a";
+    justify-content: center;
+    gap: 80px;
+  }
+  @media only screen and (max-width: 670px) {
+    grid-template-areas: "a";
+    justify-content: center;
+    gap: 80px;
+  }
 `;
 export const Beeberry = styled.div`
   display: flex;
@@ -1287,6 +1372,7 @@ export const UsefulLinks = styled.div`
   display: flex;
   flex-direction: column;
   gap: 18px;
+  width: 200px;
   p {
     color: #fff;
     font-family: "Arima";
@@ -2129,13 +2215,14 @@ export const ContactCon = styled.div`
   }
 `;
 export const SendMessage = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-areas: "a a";
   justify-content: center;
-  gap: 70px;
-  width: 100%;
-  height: 600px;
+  gap: 20px;
+  width: 100vw;
+  height: 100%;
   background: var(--Niotrol, #f9f6f2);
-  padding: 100px;
+  padding: 30px;
   h2 {
     color: var(--Black, #2b221f);
     font-family: "Arima";
@@ -2154,7 +2241,18 @@ export const SendMessage = styled.div`
     line-height: 29px;
     margin-top: 15px;
   }
+  @media only screen and (max-width: 850px) {
+    grid-template-areas: "a";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
+export const SendMessageLeft = styled.div`
+  padding: 20px;
+`;
+
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
@@ -2180,12 +2278,13 @@ export const SocialIcons = styled.div`
 export const ContanctCon = styled.div`
   display: flex;
   width: 400px;
-  height: 470px;
+  height: 100%;
   flex-shrink: 0;
   background-color: #fff;
   stroke-width: 1px;
   stroke: rgba(43, 34, 31, 0.1);
   padding: 20px;
+  margin-bottom: 50px;
 
   label,
   input,
@@ -2217,14 +2316,17 @@ export const ContanctCon = styled.div`
     flex-shrink: 0;
     padding: 10px;
   }
+  @media only screen and (max-width: 850px) {
+    padding: 50px;
+    width: 80vw;
+  }
 `;
 export const ContactUsCon = styled.div`
   width: 100%;
-  height: 632px;
+  height: 100%;
   flex-shrink: 0;
   background: #2b221f;
   padding: 50px;
-  margin-bottom: 100px;
   .title {
     h6 {
       color: #fff;
@@ -2255,12 +2357,13 @@ export const ContactMini = styled.div`
   align-items: center;
   margin-top: 50px;
   gap: 30px;
-  @media only screen and (max-width: 1140px) {
+  padding: 0 20px;
+  @media only screen and (max-width: 950px) {
     grid-template-areas: "a";
   }
 `;
 export const ContactMiniLeft = styled.div`
-  width: 520px;
+  width: 420px;
   height: 286px;
   flex-shrink: 0;
   border-radius: 20px;
@@ -2276,7 +2379,7 @@ export const ContactMiniLeft = styled.div`
   }
 `;
 export const ContactMiniRight = styled.div`
-  width: 520px;
+  width: 420px;
   height: 286px;
   flex-shrink: 0;
   border-radius: 20px;
@@ -2306,5 +2409,12 @@ export const ContactMiniRight = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
+  }
+`;
+export const MapCon = styled.div`
+  iframe {
+    height: 600px;
+    width: 100vw;
+    border: 0;
   }
 `;

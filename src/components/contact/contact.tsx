@@ -6,7 +6,9 @@ import {
   ContactUsCon,
   ContanctCon,
   MainContact,
+  MapCon,
   SendMessage,
+  SendMessageLeft,
   SocialIcons,
   Title,
 } from "../styles/style";
@@ -28,7 +30,7 @@ const Contact = () => {
         <h2>Contact</h2>
       </ContactCon>
       <SendMessage>
-        <div>
+        <SendMessageLeft>
           <Title
             style={{
               display: "flex",
@@ -66,7 +68,7 @@ const Contact = () => {
               </div>
             </SocialIcons>
           </Title>
-        </div>
+        </SendMessageLeft>
         <ContanctCon>
           <ContactUs />
         </ContanctCon>
@@ -139,7 +141,12 @@ const Contact = () => {
           </ContactMiniRight>
         </ContactMini>
       </ContactUsCon>
-    
+      <MapCon>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6151.851800458629!2d126.78550062888118!3d37.48297212425105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2skr!4v1734085859988!5m2!1sen!2skr"
+          loading="lazy"
+        ></iframe>
+      </MapCon>
     </MainContact>
   );
 };

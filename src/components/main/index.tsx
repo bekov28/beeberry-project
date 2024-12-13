@@ -13,6 +13,7 @@ import {
   CarouselItem,
   Con,
   DownloadCon,
+  DownloadConFirst,
   DownloadMini,
   EasyCon,
   GreenBtn,
@@ -26,6 +27,7 @@ import {
   NaturalMain,
   NaturalRight,
   OurProducts,
+  OurProductsFirst,
   OurServices,
   PromotesCon,
   SliderCon,
@@ -241,9 +243,8 @@ const MainPage = () => {
         </WhyUsMain>
       </WhyUsCon>
       <DownloadCon>
-        <div>
+        <DownloadConFirst>
           <div className="beeberry">
-            {" "}
             <p>Beeberry</p>
             <img src={frame2} alt="frame2-img" />
           </div>
@@ -253,21 +254,13 @@ const MainPage = () => {
           </h2>
           <DownloadMini src={apple} alt="appleStore-img" />
           <DownloadMini src={google} alt="googlePlay-img" className="Google" />
-        </div>
+        </DownloadConFirst>
         <Con>
           <img src={ai} alt="ai-img" />
         </Con>
       </DownloadCon>
       <OurProducts>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            width: "100%",
-            maxWidth: "1350px",
-          }}
-        >
+        <OurProductsFirst>
           <div className="OurProduct">
             <p>Our Products</p>
             <div>
@@ -280,8 +273,7 @@ const MainPage = () => {
               All products
             </GreenBtn>
           </div>
-        </div>
-
+        </OurProductsFirst>
         <SliderCon>
           <Slider {...settings}>
             <div className="MiniCarousel">
