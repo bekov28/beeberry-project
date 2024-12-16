@@ -8,6 +8,8 @@ import AboutUs from "./components/about/AboutUs";
 import Pages from "./components/pages/pages";
 import Contact from "./components/contact/contact";
 import Gallery from "./components/gallery/gallery";
+import SearchInput from "./components/context/search";
+import LoginComponent from "./components/auth/login";
 
 function App() {
   const location = useLocation();
@@ -25,6 +27,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<LoginComponent />} />
       </Routes>
       {!navbarContainer && <Footer />}
     </>

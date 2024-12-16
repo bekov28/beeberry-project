@@ -8,9 +8,7 @@ import {
 import { NavLink } from "react-router-dom";
 import arrow from "../assets/arrow.svg";
 import light from "../assets/light.svg";
-import searchHome from "../assets/bsearch.svg";
-import heartHome from "../assets/heartHome.svg";
-import shopHome from "../assets/shopHome.svg";
+import SearchInput from "./search";
 
 const Navbar = () => {
   return (
@@ -26,7 +24,7 @@ const Navbar = () => {
         <NavFirstMainCon>
           <NavLink to={"/"}>
             <NavFirstCon>
-              <img src={light} alt="light" className="light"/>
+              <img src={light} alt="light" className="light" />
               <p className="whiteP">Beeberry</p>
             </NavFirstCon>
           </NavLink>
@@ -69,19 +67,14 @@ const Navbar = () => {
           </NavLink>
         </MenuCon>
         <IconCon className="icon">
-          <img src={searchHome} alt="searchHome-img" />
-          <img src={heartHome} alt="heartHome-img" />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "5px",
-            }}
-          >
-            <p className="whiteP">$458.50</p>
-            <img src={shopHome} alt="shopHome-img" />
-          </div>
+          <SearchInput />
+          <NavLink to={"login"}>
+            <p className="whiteP">Login </p>
+          </NavLink>
+          <p>/</p>
+          <NavLink to="signup">
+            <p className="whiteP">Signup</p>
+          </NavLink>
         </IconCon>
       </div>
     </NavbarCon>
