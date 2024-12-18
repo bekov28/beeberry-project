@@ -10,11 +10,12 @@ import Contact from "./components/contact/contact";
 import Gallery from "./components/gallery/gallery";
 import SearchInput from "./components/context/search";
 import LoginComponent from "./components/auth/login";
+import RegisterComponent from "./components/auth/signUp";
 
 function App() {
   const location = useLocation();
   const navbarContainer =
-    location.pathname === "/login" || location.pathname === "register";
+    location.pathname === "/login" || location.pathname === "/signup";
 
   return (
     <>
@@ -28,6 +29,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<LoginComponent />} />
+        <Route path="/signup" element={<RegisterComponent/>}/>
       </Routes>
       {!navbarContainer && <Footer />}
     </>

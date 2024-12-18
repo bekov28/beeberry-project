@@ -26,11 +26,10 @@ const LoginComponent = () => {
         </InputCon>
         <KeepMeCon>
           <AlignCon>
-            {" "}
             <input type="checkbox" />
             <p>Keep me logged in</p>
           </AlignCon>
-          <a href="#">Forget your password ?</a>
+          <a href="#">Forgot your password ?</a>
         </KeepMeCon>
         <NavLink to={""}>
           <SingInBtn>SIGN IN</SingInBtn>
@@ -41,7 +40,7 @@ const LoginComponent = () => {
           <p></p>
         </OrCon>
         <IconCon2></IconCon2>
-        <NavLink to={""}>
+        <NavLink to={"/signup"}>
           <CreateBtn>CREATE ACCOUNT</CreateBtn>
         </NavLink>
       </MainConAuth>

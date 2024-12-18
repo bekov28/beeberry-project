@@ -234,17 +234,21 @@ export const SingInBtn = styled.button`
   height: 50px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: var(--blue, #006dab);
+  border: 2px solid var(--blue, #006dab);
   margin-top: 20px;
-  color: white;
-  color: #fff;
+  background: #fff;
+  color: var(--blue, #006dab);
   font-family: "Open Sans";
   font-size: 15px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: normal;
-  border: none;
   cursor: pointer;
+  &:active {
+    background: #006dab;
+    color: #fff;
+    transform: scale(0.95);
+  }
 `;
 export const OrCon = styled.div`
   display: flex;
@@ -289,6 +293,11 @@ export const CreateBtn = styled.button`
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+  &:active {
+    background: #006dab !important;
+    color: #fff !important;
+    transform: scale(0.95);
+  }
 `;
 
 export const MainRegister = styled.div`
@@ -322,7 +331,6 @@ export const RegisterDiv = styled.div`
     cursor: pointer;
   }
 `;
-
 
 export const MainFirst = styled.div`
   display: flex;
@@ -2596,5 +2604,3 @@ export const MapCon = styled.div`
     border: 0;
   }
 `;
-
-
