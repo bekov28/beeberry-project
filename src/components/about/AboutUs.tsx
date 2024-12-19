@@ -130,48 +130,54 @@ const AboutUs = () => {
         </GetInTouchIn>
       </GetInTouch>
       <AmazingTeam>
-        <Title>
-          <h6>Amazing Team</h6>
-          <img src={frame} alt="frame" />
-          <h2> Our Team of Experts</h2>
-        </Title>
-        <CarouselComponent >
-          <Carousel
-            swipeable={true}
-            draggable={true}
-            showDots={false}
-            responsive={responsive}
-            ssr={true}
-            infinite={true}
-            autoPlay={false}
-            autoPlaySpeed={1000}
-            keyBoardControl={true}
-            customTransition="all .5"
-            transitionDuration={500}
-          >
-            <CarouselDiv>
-              <div></div>
-              <GreenCon>
-                <h2>Leslie Alexander</h2>
-                <h4>Beekeeper</h4>
-              </GreenCon>
-            </CarouselDiv>
-            <CarouselDiv2>
-              <div></div>
-              <GreenCon>
-                <h2>Savannah Nguyen</h2>
-                <h4>Gardener</h4>
-              </GreenCon>
-            </CarouselDiv2>
-            <CarouselDiv3>
-              <div></div>
-              <GreenCon>
-                <h2>Cameron Williamson</h2>
-                <h4>Field Technician</h4>
-              </GreenCon>
-            </CarouselDiv3>
-          </Carousel>
-        </CarouselComponent >
+        <div
+          style={{
+            width: "1500px",
+          }}
+        >
+          <Title>
+            <h6>Amazing Team</h6>
+            <img src={frame} alt="frame" />
+            <h2> Our Team of Experts</h2>
+          </Title>
+          <CarouselComponent>
+            <Carousel
+              swipeable={true}
+              draggable={true}
+              showDots={false}
+              responsive={responsive}
+              ssr={true}
+              infinite={true}
+              autoPlay={false}
+              autoPlaySpeed={1000}
+              keyBoardControl={true}
+              customTransition="all .5"
+              transitionDuration={500}
+            >
+              <CarouselDiv>
+                <div></div>
+                <GreenCon>
+                  <h2>Leslie Alexander</h2>
+                  <h4>Beekeeper</h4>
+                </GreenCon>
+              </CarouselDiv>
+              <CarouselDiv2>
+                <div></div>
+                <GreenCon>
+                  <h2>Savannah Nguyen</h2>
+                  <h4>Gardener</h4>
+                </GreenCon>
+              </CarouselDiv2>
+              <CarouselDiv3>
+                <div></div>
+                <GreenCon>
+                  <h2>Cameron Williamson</h2>
+                  <h4>Field Technician</h4>
+                </GreenCon>
+              </CarouselDiv3>
+            </Carousel>
+          </CarouselComponent>
+        </div>
       </AmazingTeam>
       <WorkingProcess>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -196,7 +202,7 @@ const AboutUs = () => {
         </div>
       </WorkingProcess>
       <BlogCon>
-        <div style={{ marginBottom: "300px" }}>
+        <div style={{ marginBottom: "300px", width: "90vw" }}>
           <div className="BlogFirst">
             <h4>Blog & News</h4>
             <img src={frame} alt="frame" />

@@ -11,11 +11,15 @@ import Gallery from "./components/gallery/gallery";
 import SearchInput from "./components/context/search";
 import LoginComponent from "./components/auth/login";
 import RegisterComponent from "./components/auth/signUp";
+import Test from "./test/test";
+import ForgotPassword from "./components/auth/forgot";
 
 function App() {
   const location = useLocation();
   const navbarContainer =
-    location.pathname === "/login" || location.pathname === "/signup";
+    location.pathname === "/login" ||
+    location.pathname === "/signup" ||
+    location.pathname === "/forgot";
 
   return (
     <>
@@ -29,9 +33,11 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<LoginComponent />} />
-        <Route path="/signup" element={<RegisterComponent/>}/>
+        <Route path="/forgot" element={<ForgotPassword />} />
+        <Route path="/signup" element={<RegisterComponent />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
-      {!navbarContainer && <Footer />}
+      <Footer />
     </>
   );
 }

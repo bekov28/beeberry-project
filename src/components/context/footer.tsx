@@ -95,39 +95,41 @@ const Footer = () => {
               </ul>
             </div>
           </UsefulLinks>
-          <ContactUs>
-            <h2>Contact Us</h2>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "15px",
-                cursor: "pointer",
-              }}
-            >
-              <p>
-                07505, Bucheon city, Gyonggi-do, <br /> South Korea{" "}
-              </p>
-              <div>
-                <h3>
-                  <img src={phone} alt="phone-img" />
-                  +82 10 0000 0000
-                </h3>
+          <NavLink to={"/contact"}>
+            <ContactUs>
+              <h2>Contact Us</h2>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "15px",
+                  cursor: "pointer",
+                }}
+              >
+                <p>
+                  07505, Bucheon city, Gyonggi-do, <br /> South Korea{" "}
+                </p>
+                <div>
+                  <h3>
+                    <img src={phone} alt="phone-img" />
+                    +82 10 0000 0000
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    <img src={email} alt="email-img" />
+                    berdiyor@example.com
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    <img src={email} alt="email-img" />
+                    berdiyor@example.com
+                  </h3>
+                </div>
               </div>
-              <div>
-                <h3>
-                  <img src={email} alt="email-img" />
-                  berdiyor@example.com
-                </h3>
-              </div>
-              <div>
-                <h3>
-                  <img src={email} alt="email-img" />
-                  berdiyor@example.com
-                </h3>
-              </div>
-            </div>
-          </ContactUs>
+            </ContactUs>
+          </NavLink>
           <InstagramCon>
             <h2>Instagram</h2>
             <div
@@ -138,11 +140,7 @@ const Footer = () => {
               }}
             >
               <InstaMini>
-                <img
-                  src={honey1}
-                  alt="honey1"
-                  style={{ opacity: "0.3"}}
-                />
+                <img src={honey1} alt="honey1" style={{ opacity: "0.3" }} />
                 <img src={instafooter} alt="insta" className="instaLogo" />
               </InstaMini>
               <img src={honey2} alt="honey2" />

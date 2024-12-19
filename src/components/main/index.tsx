@@ -93,6 +93,7 @@ import blog3 from "../assets/blog3.jpg";
 import blog4 from "../assets/blog4.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { NavLink } from "react-router-dom";
 
 const MainPage = () => {
   var settings = {
@@ -180,7 +181,9 @@ const MainPage = () => {
                 </div>
               </PromotesCon>
               <ButtonsCon className="buttonCon">
-                <GreenBtn>Contact us</GreenBtn>
+                <NavLink to={"/contact"}>
+                  <GreenBtn>Contact us</GreenBtn>
+                </NavLink>
                 <YellowBtn>Shop Now</YellowBtn>
               </ButtonsCon>
               <ActiveImg src={arrowDown} alt="arrow-img" className="arrowImg" />
@@ -267,7 +270,10 @@ const MainPage = () => {
               <img src={frame} alt="frame" />
             </div>
           </div>
-          <div className="OurCon">
+          <div
+            className="OurCon"
+            style={{ display: "flex", flexDirection: "column" }}
+          >
             <h2>Our 100% Fresh Honey</h2>
             <GreenBtn style={{ zIndex: "5" }} className="More">
               All products
@@ -704,7 +710,7 @@ const MainPage = () => {
         </div>
       </Testimonial>
       <BlogCon>
-        <div style={{ marginBottom: "300px" }}>
+        <div style={{ marginBottom: "300px", width: "90vw" }}>
           <div className="BlogFirst">
             <h4>Blog & News</h4>
             <img src={frame} alt="frame" />

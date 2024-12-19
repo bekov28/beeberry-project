@@ -1,4 +1,3 @@
-
 import {
   AlignCon,
   CreateBtn,
@@ -17,7 +16,7 @@ const LoginComponent = () => {
   return (
     <MainMainCon>
       <MainConAuth>
-        <h2>Sign in</h2>
+        <h2>Login to Beeberry</h2>
         <InputCon>
           <p>Email</p>
           <input type="text" placeholder="Your email" />
@@ -29,9 +28,18 @@ const LoginComponent = () => {
             <input type="checkbox" />
             <p>Keep me logged in</p>
           </AlignCon>
-          <a href="#">Forgot your password ?</a>
+          <NavLink to={"/forgot"}>
+            <a
+              href="#"
+              style={{
+                textDecoration: "underline",
+              }}
+            >
+              Forgot your password ?
+            </a>
+          </NavLink>
         </KeepMeCon>
-        <NavLink to={""}>
+        <NavLink to={"/"}>
           <SingInBtn>SIGN IN</SingInBtn>
         </NavLink>
         <OrCon>

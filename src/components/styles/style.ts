@@ -2,6 +2,7 @@ import styled from "styled-components";
 import leslie from "../assets/AboutUsAssets/beekeeper1.jpg";
 import savannah from "../assets/AboutUsAssets/beekeeper2.jpg";
 import cameroon from "../assets/AboutUsAssets/beekeeper3.jpg";
+import background from "../assets/back-image.jpg";
 
 export const MainCon = styled.div`
   display: flex;
@@ -153,10 +154,15 @@ export const IconCon = styled.div`
 export const MainMainCon = styled.div`
   display: flex;
   justify-content: center;
+  background-image: url(${background});
+  @media only screen and (max-width: 530px) {
+    padding: 10px;
+  }
 `;
 
 export const MainConAuth = styled.div`
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   flex-shrink: 0;
   border-radius: 20px;
   background: #fff;
@@ -173,6 +179,9 @@ export const MainConAuth = styled.div`
     font-weight: 700;
     line-height: normal;
   }
+  h2 {
+    text-align: center;
+  }
 `;
 export const InputCon = styled.div`
   margin-top: 10px;
@@ -185,7 +194,8 @@ export const InputCon = styled.div`
     line-height: normal;
   }
   input {
-    width: 434px;
+    max-width: 434px;
+    width: 100%;
     height: 50px;
     flex-shrink: 0;
     margin-top: 10px;
@@ -230,24 +240,23 @@ export const AlignCon = styled.div`
 `;
 
 export const SingInBtn = styled.button`
-  width: 434px;
+  max-width: 434px;
+  width: 100%;
   height: 50px;
   flex-shrink: 0;
   border-radius: 10px;
-  border: 2px solid var(--blue, #006dab);
   margin-top: 20px;
-  background: #fff;
-  color: var(--blue, #006dab);
+  background: #3961dc;
+  color: white;
   font-family: "Open Sans";
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
-  &:active {
-    background: #006dab;
-    color: #fff;
-    transform: scale(0.95);
+  border: none;
+  &:hover {
+    opacity: 0.9;
   }
 `;
 export const OrCon = styled.div`
@@ -279,34 +288,56 @@ export const IconCon2 = styled.div`
   cursor: pointer;
 `;
 export const CreateBtn = styled.button`
-  width: 434px;
+  max-width: 434px;
+  width: 100%;
   height: 50px;
   flex-shrink: 0;
   border-radius: 10px;
-  border: 2px solid var(--blue, #006dab);
+  border: none;
   margin-top: 10px;
-  background: #fff;
-  color: var(--blue, #006dab);
+  background: #3961dc;
+  color: white;
   font-family: "Open Sans";
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
-  &:active {
-    background: #006dab !important;
-    color: #fff !important;
-    transform: scale(0.95);
+  &:hover {
+    opacity: 0.9;
+  }
+`;
+
+export const ForgotCon = styled.div`
+  width: 500px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  height: 270px;
+  margin: 100px 0px;
+  padding: 20px 30px;
+
+  a {
+    display: flex;
+    justify-content: right;
+    margin-top: 5px;
+    text-decoration: underline;
   }
 `;
 
 export const MainRegister = styled.div`
   display: flex;
   justify-content: center;
+  background-image: url(${background});
+  @media only screen and (max-width: 530px) {
+    padding: 10px;
+  }
 `;
 
 export const MainRegisterCon = styled.div`
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   flex-shrink: 0;
   border-radius: 20px;
   background: #fff;
@@ -318,7 +349,7 @@ export const MainRegisterCon = styled.div`
 
 export const RegisterDiv = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   p {
     color: var(--text, #373737);
     font-family: "Open Sans";
@@ -326,6 +357,7 @@ export const RegisterDiv = styled.div`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-align: center;
   }
   img {
     cursor: pointer;
@@ -848,6 +880,7 @@ export const OurProductsFirst = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 `;
 
@@ -1159,7 +1192,7 @@ export const BlogCon = styled.div`
   justify-content: center;
   align-items: center;
   background: #f9f6f2;
-  width: 100%;
+  width: 100vw;
 
   h4 {
     color: var(--pragrap, #50413c);
@@ -1192,6 +1225,7 @@ export const BlogCon = styled.div`
 export const BlogFirstCon = styled.div`
   margin-top: 60px;
   display: flex;
+  justify-content: center;
   gap: 70px;
   cursor: pointer;
 
@@ -1604,6 +1638,7 @@ export const ContactUs = styled.div`
     font-style: normal;
     font-weight: 900;
     line-height: 40px;
+    cursor: pointer;
   }
 
   p {
@@ -1752,18 +1787,19 @@ export const BeeKeeper = styled.img`
 `;
 
 export const HomeOurServices = styled.div`
-  width: 1100px;
+  width: 100vw;
   flex-shrink: 0;
   background: #f9f6f2;
   margin-top: 70px;
   padding: 70px 120px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const OurServicesMain = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 100px;
   margin-top: 30px;
 `;
@@ -2214,10 +2250,11 @@ export const GetInTouchIn = styled.div`
 export const AmazingTeam = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 1100px;
+  align-items: center;
+  width: 100%;
   height: 800px;
   background-color: #f9f6f2;
-  padding: 60px;
+  padding: 50px;
 
   h2 {
     color: var(--Black, #2b221f);
@@ -2229,7 +2266,10 @@ export const AmazingTeam = styled.div`
     line-height: 80px;
   }
 `;
-export const CarouselComponent = styled.div``;
+export const CarouselComponent = styled.div`
+  padding: 50px;
+  margin-left: 50px;
+`;
 
 export const CarouselDiv = styled.div`
   width: 300px;
@@ -2318,7 +2358,7 @@ export const CarouselDiv3 = styled.div`
   }
 `;
 export const WorkingProcess = styled.div`
-  width: 1100px;
+  width: 100vw;
   height: 480px;
   flex-shrink: 0;
   background: #2b221f;
@@ -2351,10 +2391,11 @@ export const WorkingProcess = styled.div`
 `;
 export const WorkIconCon = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-top: 30px;
   padding: 0px 50px;
+  gap: 20px;
 
   img {
     width: 150px;
